@@ -1,0 +1,14 @@
+# Benchmark runs
+
+## Parsec (4 threads)
+
+    parsecmgmt -a run -p all -i native -s /usr/bin/time -n 4
+
+ - ./log/run_4_native_2015-06-10_23:52:49.log
+   plain
+ - ./log/run_4_native_2015-06-11_09:47:13.log
+   sudo ./nvme-memload /dev/nvme0n1 patterns/random.so -b 262300
+ - ./log/run_4_native_2015-06-11_12:18:02.log
+   sudo ./nvme-memload /dev/nvme0n1 patterns/full.so -b 262300
+ - ./log/run_4_native_2015-06-11_15:52:46.log
+   sudo ./nvme-memload /dev/nvme0n1 patterns/single.so -b 262300
