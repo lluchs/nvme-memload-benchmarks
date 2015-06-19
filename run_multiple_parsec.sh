@@ -26,7 +26,7 @@ WORKLOADS+=" raytrace streamcluster swaptions vips x264"
 for i in $(seq 1 10); do
     # for conf in $(seq 1 7) ; do
     #for conf in 1 5 7 ; do
-    for conf in 2 3 ; do
+    for conf in 1 2 3 ; do
 	for w in $WORKLOADS ; do
 	    date
 	    ./parsec.sh $conf $w
