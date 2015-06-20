@@ -10,21 +10,22 @@ INPUT=native
 # INPUT=simsmall
 
 # trap and kill jobs on exit
-trap 'kill $(jobs -p)' EXIT
-trap 'kill $(jobs -p)' ERR
+trap 'sudo kill $(jobs -p)' EXIT
+trap 'sudo kill $(jobs -p)' ERR
 
 echo "🕑HEAD,real,user,sys,benchmark,threads,loadconfig"
 # run Parsec benchmarks with DMA load in background
 # param: benchmark, NUMA node, config (as passed parameter)
 function run_parsec {
-    #numactl -a --membind=$CPU_NODE --cpunodebind=$CPU_NODE \
+    numactl -a --membind=$CPU_NODE --cpunodebind=$CPU_NODE \
 	parsecmgmt -a run -p $1 -i $INPUT -n $THREADS \
 	-s "/usr/bin/time -f '🕑,%e,%U,%S,$1,$THREADS,$2'"
 }
 
 function gen_load {
     local DIR=~/tools/nvme-memload
-    sudo $DIR/nvme-memload /dev/nvme0n1 $DIR/patterns/$@ &
+    sudo numactl -a --membind=$CPU_NODE --cpunodebind=$CPU_NODE \
+	$DIR/nvme-memload /dev/nvme0n1 $DIR/patterns/$@ &
     # Wait a bit to get to full speed.
     sleep 5
 }
