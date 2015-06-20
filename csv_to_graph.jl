@@ -20,3 +20,6 @@ writetable("$outdir/averaged.csv", averaged)
 # Draw a ploc containing absolute times.
 fullplot = plot(averaged, xgroup=:benchmark, x=:loadconfig, y=:real, Geom.subplot_grid(Geom.bar))
 draw(SVGJS("$outdir/fullplot.svg", 30cm, 15cm), fullplot)
+
+fullplot = plot(averaged, x=:benchmark, color=:loadconfig, y=:real, Geom.bar(position=:dodge))
+draw(SVGJS("$outdir/fullplot2.svg", 30cm, 15cm), fullplot)
