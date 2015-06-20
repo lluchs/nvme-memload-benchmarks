@@ -48,18 +48,18 @@ fi
 case $1 in
     1)
 	echo config 1 - no concurrent DMA activity
-	run_parsec $2 $1
+	run_parsec $2 plain
     ;;
     2)
 	echo config 2 - random pattern
 	gen_load random.so
-	run_parsec $2 $1
+	run_parsec $2 random
 	kill_load
     ;;
     3)
 	echo config 3 - single pattern
 	gen_load single.so
-	run_parsec $2 $1
+	run_parsec $2 single
 	kill_load
     ;;
 
