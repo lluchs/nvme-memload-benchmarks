@@ -6,20 +6,20 @@ source check_pstate.sh
 
 THREADS=4
 CPU_NODE=0
-# INPUT=native
-INPUT=simsmall
+INPUT=native
+# INPUT=simsmall
 
 # trap and kill jobs on exit
 trap 'kill $(jobs -p)' EXIT
 trap 'kill $(jobs -p)' ERR
 
-echo "🕑HEAD,real,user,sys,memory (kB),benchmark,threads,loadconfig"
+echo "🕑HEAD,real,user,sys,benchmark,threads,loadconfig"
 # run Parsec benchmarks with DMA load in background
 # param: benchmark, NUMA node, config (as passed parameter)
 function run_parsec {
     #numactl -a --membind=$CPU_NODE --cpunodebind=$CPU_NODE \
 	parsecmgmt -a run -p $1 -i $INPUT -n $THREADS \
-	-s "/usr/bin/time -f '🕑,%e,%U,%S,%K,$1,$THREADS,$2'"
+	-s "/usr/bin/time -f '🕑,%e,%U,%S,$1,$THREADS,$2'"
 }
 
 function gen_load {
