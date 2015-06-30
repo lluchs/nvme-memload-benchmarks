@@ -12,7 +12,7 @@ mkpath(outdir)
 
 # Compute averages from multiple runs.
 averaged = by(input, [:benchmark, :loadconfig]) do df
-	DataFrame(real = mean(df[:real]), user = mean(df[:user]), sys = mean(df[:sys]))
+	DataFrame(real = mean(df[:real]), user = mean(df[:user]), sys = mean(df[:sys]), count = length(df[1]))
 end
 
 writetable("$outdir/average.csv", averaged)
