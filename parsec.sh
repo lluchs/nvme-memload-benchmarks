@@ -4,8 +4,10 @@
 # TurboBoost, Intel Pstate at max...)
 source check_pstate.sh
 
-THREADS=4
+THREADS=3
 CPU_NODE=0
+PARSEC_CPU_LIST=1-3
+NVME_CPU_LIST=0
 INPUT=native
 # INPUT=simsmall
 
@@ -18,6 +20,7 @@ echo "🕑HEAD,real,user,sys,benchmark,threads,loadconfig"
 # param: benchmark, NUMA node, config (as passed parameter)
 function run_parsec {
     numactl -a --membind=$CPU_NODE --cpunodebind=$CPU_NODE \
+	taskset -c $PARSEC_CPU_LIST \
 	parsecmgmt -a run -p $1 -i $INPUT -n $THREADS \
 	-s "/usr/bin/time -f '🕑,%e,%U,%S,$1,$THREADS,$2'"
 }
@@ -25,9 +28,10 @@ function run_parsec {
 function gen_load {
     local DIR=~/tools/nvme-memload
     sudo numactl -a --membind=$CPU_NODE --cpunodebind=$CPU_NODE \
-	$DIR/nvme-memload /dev/nvme0n1 $DIR/patterns/$@ &
+	taskset -c $NVME_CPU_LIST \
+	$DIR/nvme-memload -j4 /dev/nvme0n1 $DIR/patterns/$@ &
     # Wait a bit to get to full speed.
-    sleep 5
+    sleep 1
 }
 
 function kill_load {
