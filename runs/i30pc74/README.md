@@ -15,3 +15,12 @@
 ## benchmark4
  - -j4 -c once
  - taskset: 1/3
+
+## benchmark5
+ - -j4 -c always
+ - taskset: 1/3
+
+## benchmark6
+ - -j4
+ - -b 262144 (= 1 GiB)
+ - taskset: 1/3
