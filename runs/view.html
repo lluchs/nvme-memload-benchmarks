@@ -9,28 +9,29 @@
 		<option value="violin.svg">violin</option>
 		<option value="average.svg">average</option>
 	</select>
-	<ul id="benchmarksel">
-		<li data-name="i30pc74">
-			i30pc74:
-			<button>1</button>
-			<button>2</button>
-			<button>3</button>
-			<button>4</button>
-			<button>5</button>
-			<button>6</button>
-			<button>7</button>
-			<button>8</button>
-		</li>
-		<li data-name="i30pc80">
-			i30pc80:
-			<button>1</button>
-			<button>2</button>
-			<button>3</button>
-			<button>4</button>
-			<button>5</button>
-			<button>6</button>
-		</li>
-	</ul>
+	<table id="benchmarksel">
+		<tr data-name="i30pc74">
+			<td>i30pc74:
+			<td><button>1</button>
+			<td><button>2</button>
+			<td><button>3</button>
+			<td><button>4</button>
+			<td><button>5</button>
+			<td><button>6</button>
+			<td><button>7</button>
+			<td><button>8</button>
+		</tr>
+		<tr data-name="i30pc80">
+			<td>i30pc80:
+			<td><button>1</button>
+			<td>
+			<td><button>2</button>
+			<td><button>3</button>
+			<td><button>4</button>
+			<td><button>5</button>
+			<td><button>6</button>
+		</tr>
+	</table>
 
 	<object id="svgarea" type="image/svg" data="" width="100%" height="100%"></object>
 </main>
@@ -47,7 +48,8 @@
 	var lastButton = null
 	function selectBenchmark(button) {
 		lastButton = button
-		var computerName = button.parentElement.dataset.name, benchmark = button.textContent
+		var computerName = button.parentElement.parentElement.dataset.name,
+			benchmark = button.textContent
 		// Fixes rendering issues in Firefox.
 		svgarea.data = ''
 		setTimeout(function() {
