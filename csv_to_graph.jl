@@ -17,11 +17,14 @@ end
 
 writetable("$outdir/average.csv", averaged)
 
-pl = plot(input, xgroup=:benchmark, x=:loadconfig, y=:real, color=:loadconfig, Geom.subplot_grid(Geom.point))
+# Force a single scale for all graphs to allow comparison between them.
+scale = Scale.y_continuous(minvalue=0, maxvalue=250)
+
+pl = plot(input, xgroup=:benchmark, x=:loadconfig, y=:real, color=:loadconfig, Geom.subplot_grid(Geom.point), scale)
 draw(SVGJS("$outdir/scatter.svg", 30cm, 15cm), pl)
 
-pl = plot(input, xgroup=:benchmark, x=:loadconfig, y=:real, Geom.subplot_grid(Geom.violin))
+pl = plot(input, xgroup=:benchmark, x=:loadconfig, y=:real, Geom.subplot_grid(Geom.violin), scale)
 draw(SVGJS("$outdir/violin.svg", 30cm, 15cm), pl)
 
-pl = plot(averaged, x=:benchmark, color=:loadconfig, y=:real, Geom.bar(position=:dodge))
+pl = plot(averaged, x=:benchmark, color=:loadconfig, y=:real, Geom.bar(position=:dodge), scale)
 draw(SVGJS("$outdir/average.svg", 30cm, 15cm), pl)
