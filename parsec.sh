@@ -6,8 +6,8 @@ source check_pstate.sh
 
 THREADS=3
 CPU_NODE=0
-PARSEC_CPU_LIST=1-3
-NVME_CPU_LIST=0
+PARSEC_CPU_LIST=0-2
+NVME_CPU_LIST=3
 INPUT=native
 # INPUT=simsmall
 
