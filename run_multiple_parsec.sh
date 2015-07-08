@@ -10,8 +10,8 @@ source check_pstate.sh
 [[ -z "${1-}" ]] && PARSEC=./parsec.sh || PARSEC=$1
 
 # trap and kill jobs on exit
-trap 'kill $(jobs -p)' EXIT
-trap 'kill $(jobs -p)' ERR
+trap 'pkill -P $$' EXIT
+trap 'pkill -P $$' ERR
 
 WORKLOADS="blackscholes bodytrack canneal dedup ferret"
 WORKLOADS+=" freqmine"

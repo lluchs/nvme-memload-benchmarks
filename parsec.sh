@@ -8,12 +8,12 @@ THREADS=3
 CPU_NODE=0
 PARSEC_CPU_LIST=0-2
 NVME_CPU_LIST=3
-INPUT=native
+INPUT=test
 # INPUT=simsmall
 
 # trap and kill jobs on exit
-trap 'sudo kill $(jobs -p)' EXIT
-trap 'sudo kill $(jobs -p)' ERR
+trap 'sudo pkill -P $$' EXIT
+trap 'sudo pkill -P $$' ERR
 
 echo "🕑HEAD,real,user,sys,benchmark,threads,loadconfig"
 # run Parsec benchmarks with DMA load in background
@@ -33,11 +33,6 @@ function gen_load {
     # Wait a bit to get to full speed.
     sleep 1
 }
-
-function kill_load {
-    sudo kill $(jobs -p)
-}
-
 
 # configuration in $1
 if [ -z $1 ] ; then
@@ -59,13 +54,11 @@ case $1 in
 	echo config 2 - random pattern
 	gen_load random.so
 	run_parsec $2 random
-	kill_load
     ;;
     3)
 	echo config 3 - single pattern
 	gen_load single.so
 	run_parsec $2 single
-	kill_load
     ;;
 
     *)
