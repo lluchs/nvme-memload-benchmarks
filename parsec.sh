@@ -8,7 +8,7 @@ THREADS=3
 CPU_NODE=0
 PARSEC_CPU_LIST=0-2
 NVME_CPU_LIST=3
-INPUT=test
+INPUT=native
 # INPUT=simsmall
 
 # trap and kill jobs on exit
