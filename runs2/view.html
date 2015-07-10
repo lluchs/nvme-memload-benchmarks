@@ -1,0 +1,52 @@
+<!doctype html>
+
+<title>Benchmark Graph Viewer</title>
+<meta charset="utf-8">
+
+<main>
+	<select id="graphsel">
+		<option value="scatter.svg">scatter</option>
+		<option value="violin.svg">violin</option>
+		<option value="average.svg">average</option>
+	</select>
+	<table id="benchmarksel">
+		<tr data-name="i30pc74">
+			<td>i30pc74:
+			<td><button>1</button>
+			<td><button>2</button>
+			<td><button>3</button>
+			<td><button>4</button>
+		</tr>
+		<tr data-name="i30pc80">
+			<td>i30pc80:
+			<td><button>1</button>
+			<td><button>2</button>
+			<td><button>3</button>
+			<td><button>4</button>
+		</tr>
+	</table>
+
+	<object id="svgarea" type="image/svg" data="" width="100%" height="100%"></object>
+</main>
+
+<script>
+	benchmarksel.addEventListener('click', function(e) {
+		if (e.target.tagName != 'BUTTON') return
+		selectBenchmark(e.target)
+	})
+	graphsel.addEventListener('change', function() {
+		if (lastButton != null) selectBenchmark(lastButton);
+	});
+
+	var lastButton = null
+	function selectBenchmark(button) {
+		lastButton = button
+		var computerName = button.parentElement.parentElement.dataset.name,
+			benchmark = button.textContent
+		// Fixes rendering issues in Firefox.
+		svgarea.data = ''
+		setTimeout(function() {
+			svgarea.data = computerName + '/benchmark' + benchmark + '/' + graphsel.value
+		}, 1)
+	}
+</script>
