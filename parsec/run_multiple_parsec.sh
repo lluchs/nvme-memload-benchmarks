@@ -4,7 +4,7 @@ set -eu
 
 # First priority: check that we got power management settings right (no
 # TurboBoost, Intel Pstate at max...)
-source check_pstate.sh
+source ../check_pstate.sh
 
 # Allow passing in the benchmark script as first parameter.
 [[ -z "${1-}" ]] && PARSEC=./parsec.sh || PARSEC=$1

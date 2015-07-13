@@ -2,7 +2,7 @@
 
 # First priority: check that we got power management settings right (no
 # TurboBoost, Intel Pstate at max...)
-source check_pstate.sh
+source ../check_pstate.sh
 
 THREADS=3
 CPU_NODE=0
