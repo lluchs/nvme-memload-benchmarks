@@ -10,7 +10,7 @@ csplit -f /tmp/$basename- $logfile /^★★★/ '{*}'
 
 for f in /tmp/$basename-*; do
     target=$(dirname $logfile)/$(basename $f).csv
-    cat $f | ../log_to_csv.sh > $target
+    cat $f | ./log_to_csv.sh > $target
     ./csv_to_graph.jl $target &
 done
 
