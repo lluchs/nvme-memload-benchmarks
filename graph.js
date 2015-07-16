@@ -41,10 +41,17 @@
   // drawCSV('i30pc74/benchmark1-00.csv')
 
   function drawCSV(url) {
-    d3.csv(url, function(err, data) {
+    d3.csv(url, type, function(err, data) {
       if (err) alert(err)
       else draw(data)
     })
+
+    function type(d) {
+      ['real', 'user', 'sys'].forEach((col) => {
+        d[col] = +d[col]
+      })
+      return d
+    }
   }
 
   var prevDomain = []
