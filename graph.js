@@ -38,7 +38,7 @@
   legend.append('g')
       .attr('transform', 'translate(10, 10)')
 
-  drawCSV('i30pc74/benchmark1-00.csv')
+  // drawCSV('i30pc74/benchmark1-00.csv')
 
   function drawCSV(url) {
     d3.csv(url, function(err, data) {
@@ -98,19 +98,55 @@
         .text((d) => d)
   }
 
-  var benchmarks = {
-    i30pc74: ['00', '01', '02'],
-  }
-  var benchmarksel = d3.select('#benchmarksel')
-  var rows = benchmarksel.selectAll('tr')
-      .data(Object.keys(benchmarks))
-  rows.enter().append('tr')
-      .append('td')
+  /* Benchmark selector */
+  d3.tsv('benchmarks.tsv', function(err, data) {
+    if (err) debugger
+
+    var benchmarks = d3.select('#benchmarks')
+
+    var benchmark = benchmarks.select('.benchmark')
+        .on('change', () => updateRuns(d3.event.target.value))
+    benchmark.selectAll('option')
+        .data(d3.set(data.map((r) => r.benchmark)).values())
+      .enter().append('option')
         .text((t) => t)
-  rows.selectAll('td:not(:first-child)')
-      .data((pc) => benchmarks[pc].map((b) => ({pc: pc, benchmark: b})))
-    .enter().append('td').append('button')
-      .text((t) => t.benchmark)
-      .on('click', (t) => drawCSV(`${t.pc}/benchmark1-${t.benchmark}.csv`))
+
+    updateRuns(data[0].benchmark)
+
+    function updateRuns(benchmark) {
+      var filtered = data.filter((r) => r.benchmark == benchmark)
+      var run = benchmarks.select('.run')
+          .on('change', () => updateRows(filtered, d3.event.target.value))
+      var option = run.selectAll('option')
+          .data(d3.set(filtered.map((r) => r.run)).values())
+      option.enter().append('option')
+      option
+          .text((t) => t)
+      option.exit().remove()
+
+      updateRows(filtered, filtered[0].run)
+    }
+
+    function updateRows(data, run) {
+      var filtered = data.filter((r) => r.run == run);
+      var rows = benchmarks.select('table').selectAll('tr')
+          .data(d3.set(filtered.map((r) => r.pc)).values())
+      rows.enter().append('tr')
+          .append('td')
+      rows.select('td:first-child')
+          .text((t) => t)
+      rows.exit().remove()
+      var td = rows.selectAll('td:not(:first-child)')
+          .data((pc) => filtered.filter((r) => r.pc == pc))
+      td.enter().append('td')
+      var button = td.selectAll('button')
+          .data((d) => [d])
+      button.enter().append('button')
+          .on('click', (t) => drawCSV(t.file))
+      button
+          .text((t) => t.n)
+      td.exit().remove()
+    }
+  })
 
 })();
