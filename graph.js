@@ -3,6 +3,7 @@
   const margin = {top: 20, right: 30, bottom: 40, left: 40},
         width = 960 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom
+  const dotRadius = 5
 
   const yAttr = (d) => d['real']
 
@@ -73,7 +74,7 @@
     points.transition()
         .call(updatePoints)
     points.enter().append('circle')
-        .attr('r', 5)
+        .attr('r', dotRadius)
         .call(updatePoints)
     points.exit().remove()
 
@@ -93,7 +94,7 @@
         .data(loadcolor.domain())
     var g = rows.enter().append('g')
     g.append('circle')
-        .attr('r', 5)
+        .attr('r', dotRadius)
         .attr('cx', 2.5)
         .attr('cy', (d, i) => i * 15)
     g.append('text')
