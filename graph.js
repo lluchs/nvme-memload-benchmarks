@@ -78,10 +78,48 @@
         .call(updatePoints)
     points.exit().remove()
 
+    // Bars show the average.
+    var average = _.chain(data)
+        .groupBy('benchmark')
+        .values()
+        .map((r) => _.chain(r).groupBy('loadconfig').values().value())
+        .flatten(true)
+        .map((r) => {
+          // find numeric columns
+          var cols = d3.set(_.keys(r[0]).filter((k) => _.isNumber(r[0][k])))
+          // compute the average for those columns
+          return _.mapObject(r[0], (v, k) => cols.has(k) ? d3.mean(r, (o) => o[k]) : v) 
+        })
+        .value()
+    var bars = chart.selectAll('rect')
+        .data(average)
+    bars.enter().append('rect')
+        .attr('width', dotRadius * 2)
+        .attr('opacity', 0.5)
+        .call(updateBars)
+        .attr('height', 0)
+        .attr('y', height)
+    bars.transition()
+        .call(updateBars)
+    bars.exit().remove()
+
     function updatePoints(sel) {
       sel
         .attr('cx', (d, i) => x(d.benchmark))
         .attr('cy', (d, i) => y(yAttr(d)))
+        .call(updateCommon)
+    }
+
+    function updateBars(sel) {
+      sel
+        .attr('height', (d) => height - y(yAttr(d)))
+        .attr('x', (d) => x(d.benchmark) - dotRadius)
+        .attr('y', (d) => y(yAttr(d)))
+        .call(updateCommon)
+    }
+
+    function updateCommon(sel) {
+      sel
         .attr('transform', (d) => `translate(${xOffset(d.loadconfig)}, 0)`)
         .attr('fill', (d) => loadcolor(d.loadconfig))
     }
