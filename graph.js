@@ -35,6 +35,11 @@
       .attr('transform', `translate(0, ${height})`)
   chart.append('g')
       .attr('class', 'y axis')
+      .on('dblclick', () => {
+        // reset y scale
+        prevDomain = []
+        draw(prevData)
+      })
 
   var yLabel = chart.append('text')
       .attr('class', 'y label')
