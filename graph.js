@@ -5,7 +5,9 @@
         height = 500 - margin.top - margin.bottom
   const dotRadius = 5
 
-  const yAttr = (d) => d['real']
+  const yAttrCols = ['real', 'user', 'sys']
+  var yAttrCol = 0
+  const yAttr = (d) => d[yAttrCols[yAttrCol]]
 
   var x = d3.scale.ordinal()
       .rangeRoundBands([0, width])
@@ -34,6 +36,16 @@
   chart.append('g')
       .attr('class', 'y axis')
 
+  var yLabel = chart.append('text')
+      .attr('class', 'y label')
+      .attr('transform', 'rotate(-90)')
+      .attr('x', -30)
+      .attr('y', 20)
+      .on('click', () => {
+        yAttrCol = (yAttrCol + 1) % yAttrCols.length
+        draw(prevData)
+      })
+
   var legend = d3.select('#legend')
       .attr('width', 100)
   legend.append('g')
@@ -48,15 +60,16 @@
     })
 
     function type(d) {
-      ['real', 'user', 'sys'].forEach((col) => {
+      yAttrCols.forEach((col) => {
         d[col] = +d[col]
       })
       return d
     }
   }
 
-  var prevDomain = []
+  var prevDomain = [], prevData
   function draw(data) {
+    prevData = data
     x.domain(data.map((d) => d.benchmark))
     prevDomain = [d3.min(data.map(yAttr).concat(prevDomain)), d3.max(data.map(yAttr).concat(prevDomain))]
     y.domain(prevDomain).nice();
@@ -68,6 +81,8 @@
 
     chart.select('.x.axis').call(xAxis)
     chart.select('.y.axis').call(yAxis)
+
+    yLabel.text(yAttrCols[yAttrCol])
 
     var points = chart.selectAll('circle')
         .data(data)
