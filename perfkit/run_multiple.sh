@@ -10,31 +10,35 @@ source ../check_pstate.sh
 trap 'pkill -P $$' EXIT
 trap 'pkill -P $$' ERR
 
+BENCHMARKS="tpcc ycsb memtier-redis"
+
 for i in $(seq 1 5); do
     for conf in 1 2 3 ; do
-	for w in ycsb tpcc ; do
+	for w in $BENCHMARKS ; do
 	    date
 	    ./run.sh $conf $w
 	done
     done
 done
 
-echo ★★★ Run 2: -c once ★★★
-export NVME_MEMLOAD_PARAMS="-c once"
+echo ★★★ Run 2: -b 262144 ★★★
+export NVME_MEMLOAD_PARAMS=""
+export NVME_MEMLOAD_PATTERN_PARAMS="-b 262144"
 for i in $(seq 1 5); do
     for conf in 1 2 3 ; do
-	for w in ycsb tpcc ; do
+	for w in $BENCHMARKS ; do
 	    date
 	    ./run.sh $conf $w
 	done
     done
 done
 
-echo ★★★ Run 3: -c always ★★★
+echo ★★★ Run 3: -c always , -b 262144  ★★★
 export NVME_MEMLOAD_PARAMS="-c always"
+export NVME_MEMLOAD_PATTERN_PARAMS="-b 262144"
 for i in $(seq 1 5); do
     for conf in 1 2 3 ; do
-	for w in ycsb tpcc ; do
+	for w in $BENCHMARKS ; do
 	    date
 	    ./run.sh $conf $w
 	done

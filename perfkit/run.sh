@@ -42,7 +42,7 @@ function gen_load {
     local DIR=~/tools/nvme-memload
     sudo numactl -a --membind=$CPU_NODE --cpunodebind=$CPU_NODE \
 	taskset -c $NVME_CPU_LIST \
-	$DIR/nvme-memload -j4 $NVME_MEMLOAD_PARAMS /dev/nvme0n1 $@ &
+	$DIR/nvme-memload -j4 $NVME_MEMLOAD_PARAMS /dev/nvme0n1 $@ $NVME_MEMLOAD_PATTERN_PARAMS &
     # Wait a bit to get to full speed.
     sleep 1
 }
@@ -60,7 +60,7 @@ fi
 
 case $2 in
     tpcc | ycsb)
-	CMD=run_silo $2
+	CMD="run_silo $2"
     ;;
     memtier-redis)
 	CMD=run_memtier_benchmark
