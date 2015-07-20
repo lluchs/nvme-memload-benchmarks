@@ -9,3 +9,16 @@ mkdir -p benchmarks
     make -j
     make -j dbtest
 )
+
+[[ -d benchmarks/memtier_benchmark ]] || (
+    git clone https://github.com/RedisLabs/memtier_benchmark benchmarks/memtier_benchmark
+    cd benchmarks/memtier_benchmark
+    git checkout 1.2.4
+
+    sudo apt-get install libevent-dev autoconf redis-server
+    sudo systemctl stop redis-server
+
+    autoreconf -ivf
+    ./configure
+    make -j
+)
