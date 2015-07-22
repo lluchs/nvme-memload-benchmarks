@@ -214,7 +214,10 @@
       var button = td.selectAll('button')
           .data((d) => [d])
       button.enter().append('button')
-          .on('click', (t) => drawCSV(t.file))
+          .on('click', (t) => {
+            d3.select('#desc').text(t.desc)
+            drawCSV(t.file)
+          })
       button
           .text((t) => t.n)
       td.exit().remove()
