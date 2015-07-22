@@ -24,3 +24,6 @@ parsec	2	i30pc80	4	./parsec/runs2/i30pc80/benchmark4.csv
 perfkit	1	i30pc74	00	./perfkit/runs/i30pc74/benchmark1-00.csv
 perfkit	1	i30pc74	01	./perfkit/runs/i30pc74/benchmark1-01.csv
 perfkit	1	i30pc74	02	./perfkit/runs/i30pc74/benchmark1-02.csv
+perfkit	2	i30pc74	00	./perfkit/runs/i30pc74/benchmark2-00.csv
+perfkit	2	i30pc74	01	./perfkit/runs/i30pc74/benchmark2-01.csv
+perfkit	2	i30pc74	02	./perfkit/runs/i30pc74/benchmark2-02.csv
