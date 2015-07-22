@@ -5,9 +5,13 @@
         height = 500 - margin.top - margin.bottom
   const dotRadius = 5
 
-  const yAttrCols = ['real', 'user', 'sys']
+  const yAttrCols = ['real', 'user', 'sys', 'runtime', 'throughput']
   var yAttrCol = 0
   const yAttr = (d) => d[yAttrCols[yAttrCol]]
+  function nextColumn() {
+    yAttrCol = (yAttrCol + 1) % yAttrCols.length
+    if (yAttr(prevData[0]) == null) nextColumn()
+  }
 
   var x = d3.scale.ordinal()
       .rangeRoundBands([0, width])
@@ -48,10 +52,9 @@
   var yLabel = chart.append('text')
       .attr('class', 'y label')
       .attr('transform', 'rotate(-90)')
-      .attr('x', -30)
       .attr('y', 20)
       .on('click', () => {
-        yAttrCol = (yAttrCol + 1) % yAttrCols.length
+        nextColumn()
         draw(prevData)
       })
 
@@ -70,7 +73,8 @@
 
     function type(d) {
       yAttrCols.forEach((col) => {
-        d[col] = +d[col]
+        if (col in d)
+          d[col] = +d[col]
       })
       return d
     }
@@ -92,6 +96,8 @@
     chart.select('.y.axis').call(yAxis)
 
     yLabel.text(yAttrCols[yAttrCol])
+    var {width} = yLabel.node().getBBox()
+    yLabel.attr('x', -width)
 
     var points = pointsGroup.selectAll('circle')
         .data(data)
