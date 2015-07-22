@@ -30,6 +30,10 @@
     .append('g')
       .attr('transform', `translate(${margin.left}, ${margin.right})`);
 
+  // Create groups to ensure ordering (bars behind points).
+  var barsGroup = chart.append('g')
+  var pointsGroup = chart.append('g')
+
   chart.append('g')
       .attr('class', 'x axis')
       .attr('transform', `translate(0, ${height})`)
@@ -89,7 +93,7 @@
 
     yLabel.text(yAttrCols[yAttrCol])
 
-    var points = chart.selectAll('circle')
+    var points = pointsGroup.selectAll('circle')
         .data(data)
     points.transition()
         .call(updatePoints)
@@ -111,7 +115,7 @@
           return _.mapObject(r[0], (v, k) => cols.has(k) ? d3.mean(r, (o) => o[k]) : v) 
         })
         .value()
-    var bars = chart.selectAll('rect')
+    var bars = barsGroup.selectAll('rect')
         .data(average)
     bars.enter().append('rect')
         .attr('width', dotRadius * 2)
@@ -127,6 +131,7 @@
       sel
         .attr('cx', (d, i) => x(d.benchmark))
         .attr('cy', (d, i) => y(yAttr(d)))
+        .attr('title', (d) => yAttr(d))
         .call(updateCommon)
     }
 
@@ -135,6 +140,7 @@
         .attr('height', (d) => height - y(yAttr(d)))
         .attr('x', (d) => x(d.benchmark) - dotRadius)
         .attr('y', (d) => y(yAttr(d)))
+        .attr('title', (d) => `avg: ${d3.round(yAttr(d), 2)}`)
         .call(updateCommon)
     }
 
