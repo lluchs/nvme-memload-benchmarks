@@ -30,3 +30,6 @@ perfkit	1	i30pc80	02	./perfkit/runs/i30pc80/benchmark1-02.csv	1 GiB buffer, -c a
 perfkit	2	i30pc74	00	./perfkit/runs/i30pc74/benchmark2-00.csv	plain
 perfkit	2	i30pc74	01	./perfkit/runs/i30pc74/benchmark2-01.csv	1 GiB buffer
 perfkit	2	i30pc74	02	./perfkit/runs/i30pc74/benchmark2-02.csv	1 GiB buffer, -c always
+perfkit	2	i30pc80	00	./perfkit/runs/i30pc80/benchmark2-00.csv	plain
+perfkit	2	i30pc80	01	./perfkit/runs/i30pc80/benchmark2-01.csv	1 GiB buffer
+perfkit	2	i30pc80	02	./perfkit/runs/i30pc80/benchmark2-02.csv	1 GiB buffer, -c always
