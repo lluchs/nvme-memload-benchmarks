@@ -1,0 +1,456 @@
+→ PCIeRdCur-hits with single
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+97070 blocks/s (379 MiB/s) via 97070 commands (7 MiB/s), PCIeRdCur: 256759
+96589 blocks/s (377 MiB/s) via 96589 commands (7 MiB/s), PCIeRdCur: 263075
+98570 blocks/s (385 MiB/s) via 98570 commands (7 MiB/s), PCIeRdCur: 218366
+97496 blocks/s (380 MiB/s) via 97496 commands (7 MiB/s), PCIeRdCur: 245885
+98131 blocks/s (383 MiB/s) via 98131 commands (7 MiB/s), PCIeRdCur: 248095
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 1232192 over 5.00s (246403 per second)
+→ PCIeRdCur-misses with single
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+96968 blocks/s (378 MiB/s) via 96968 commands (7 MiB/s), PCIeRdCur: 73226
+97394 blocks/s (380 MiB/s) via 97394 commands (7 MiB/s), PCIeRdCur: 66996
+97285 blocks/s (380 MiB/s) via 97285 commands (7 MiB/s), PCIeRdCur: 57292
+97125 blocks/s (379 MiB/s) via 97125 commands (7 MiB/s), PCIeRdCur: 69796
+97763 blocks/s (381 MiB/s) via 97763 commands (7 MiB/s), PCIeRdCur: 72412
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 339728 over 5.00s (67936 per second)
+→ RFO-hits-filtered with single
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+97202 blocks/s (379 MiB/s) via 97202 commands (7 MiB/s), RFO: 97219
+97690 blocks/s (381 MiB/s) via 97690 commands (7 MiB/s), RFO: 97703
+98207 blocks/s (383 MiB/s) via 98207 commands (7 MiB/s), RFO: 98259
+97106 blocks/s (379 MiB/s) via 97106 commands (7 MiB/s), RFO: 97233
+96540 blocks/s (377 MiB/s) via 96540 commands (7 MiB/s), RFO: 96573
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 486992 over 5.00s (97386 per second)
+→ RFO-misses-filtered with single
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+97205 blocks/s (379 MiB/s) via 97205 commands (7 MiB/s), RFO: 9
+97270 blocks/s (379 MiB/s) via 97270 commands (7 MiB/s), RFO: 17
+97249 blocks/s (379 MiB/s) via 97249 commands (7 MiB/s), RFO: 24
+97188 blocks/s (379 MiB/s) via 97188 commands (7 MiB/s), RFO: 16
+97306 blocks/s (380 MiB/s) via 97306 commands (7 MiB/s), RFO: 20
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 86 over 5.00s (17 per second)
+→ ItoM-hits-filtered with single
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+97671 blocks/s (381 MiB/s) via 97671 commands (7 MiB/s), ItoM: 12502682
+98464 blocks/s (384 MiB/s) via 98464 commands (7 MiB/s), ItoM: 12602898
+97450 blocks/s (380 MiB/s) via 97450 commands (7 MiB/s), ItoM: 12473601
+97434 blocks/s (380 MiB/s) via 97434 commands (7 MiB/s), ItoM: 12471569
+97876 blocks/s (382 MiB/s) via 97876 commands (7 MiB/s), ItoM: 12528115
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 62578865 over 5.00s (12513997 per second)
+→ ItoM-misses-filtered with single
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+96916 blocks/s (378 MiB/s) via 96916 commands (7 MiB/s), ItoM: 12131
+96874 blocks/s (378 MiB/s) via 96874 commands (7 MiB/s), ItoM: 12058
+97060 blocks/s (379 MiB/s) via 97060 commands (7 MiB/s), ItoM: 11860
+98524 blocks/s (384 MiB/s) via 98524 commands (7 MiB/s), ItoM: 11923
+97067 blocks/s (379 MiB/s) via 97067 commands (7 MiB/s), ItoM: 11687
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 59664 over 5.00s (11931 per second)
+→ PCIeRdCur-hits with random
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+132525 blocks/s (517 MiB/s) via 4275 commands (0 MiB/s), PCIeRdCur: 24222
+145421 blocks/s (568 MiB/s) via 4691 commands (0 MiB/s), PCIeRdCur: 28289
+170562 blocks/s (666 MiB/s) via 5502 commands (0 MiB/s), PCIeRdCur: 31950
+150536 blocks/s (588 MiB/s) via 4856 commands (0 MiB/s), PCIeRdCur: 29719
+134261 blocks/s (524 MiB/s) via 4331 commands (0 MiB/s), PCIeRdCur: 23093
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 137273 over 5.00s (27450 per second)
+→ PCIeRdCur-misses with random
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+185535 blocks/s (724 MiB/s) via 5985 commands (0 MiB/s), PCIeRdCur: 2707
+149420 blocks/s (583 MiB/s) via 4820 commands (0 MiB/s), PCIeRdCur: 3675
+165788 blocks/s (647 MiB/s) via 5348 commands (0 MiB/s), PCIeRdCur: 2657
+169539 blocks/s (662 MiB/s) via 5469 commands (0 MiB/s), PCIeRdCur: 2002
+162006 blocks/s (632 MiB/s) via 5226 commands (0 MiB/s), PCIeRdCur: 365
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 11406 over 5.00s (2281 per second)
+→ RFO-hits-filtered with random
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+178777 blocks/s (698 MiB/s) via 5767 commands (0 MiB/s), RFO: 5768
+167369 blocks/s (653 MiB/s) via 5399 commands (0 MiB/s), RFO: 5398
+150040 blocks/s (586 MiB/s) via 4840 commands (0 MiB/s), RFO: 4840
+162998 blocks/s (636 MiB/s) via 5258 commands (0 MiB/s), RFO: 5258
+156519 blocks/s (611 MiB/s) via 5049 commands (0 MiB/s), RFO: 5049
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 26314 over 5.00s (5262 per second)
+→ RFO-misses-filtered with random
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+158782 blocks/s (620 MiB/s) via 5122 commands (0 MiB/s), RFO: 1
+157325 blocks/s (614 MiB/s) via 5075 commands (0 MiB/s), RFO: 0
+173786 blocks/s (678 MiB/s) via 5606 commands (0 MiB/s), RFO: 0
+158100 blocks/s (617 MiB/s) via 5100 commands (0 MiB/s), RFO: 0
+180823 blocks/s (706 MiB/s) via 5833 commands (0 MiB/s), RFO: 0
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 1 over 5.00s (0 per second)
+→ ItoM-hits-filtered with random
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+162440 blocks/s (634 MiB/s) via 5240 commands (0 MiB/s), ItoM: 10733312
+167183 blocks/s (653 MiB/s) via 5393 commands (0 MiB/s), ItoM: 11045056
+168640 blocks/s (658 MiB/s) via 5440 commands (0 MiB/s), ItoM: 11140736
+162161 blocks/s (633 MiB/s) via 5231 commands (0 MiB/s), ItoM: 10713472
+172174 blocks/s (672 MiB/s) via 5554 commands (0 MiB/s), ItoM: 11374656
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 55008361 over 5.00s (10999987 per second)
+→ ItoM-misses-filtered with random
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+169167 blocks/s (660 MiB/s) via 5457 commands (0 MiB/s), ItoM: 19826
+161169 blocks/s (629 MiB/s) via 5199 commands (0 MiB/s), ItoM: 18823
+171678 blocks/s (670 MiB/s) via 5538 commands (0 MiB/s), ItoM: 20659
+187705 blocks/s (733 MiB/s) via 6055 commands (0 MiB/s), ItoM: 21872
+152861 blocks/s (597 MiB/s) via 4931 commands (0 MiB/s), ItoM: 18123
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 99303 over 5.00s (19858 per second)
+→ PCIeRdCur-hits with flush
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 68971 commands (5 MiB/s), PCIeRdCur: 69004
+0 blocks/s (0 MiB/s) via 69017 commands (5 MiB/s), PCIeRdCur: 69011
+0 blocks/s (0 MiB/s) via 68976 commands (5 MiB/s), PCIeRdCur: 68980
+0 blocks/s (0 MiB/s) via 69007 commands (5 MiB/s), PCIeRdCur: 71212
+0 blocks/s (0 MiB/s) via 68794 commands (5 MiB/s), PCIeRdCur: 76836
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 355043 over 5.00s (70999 per second)
+→ PCIeRdCur-misses with flush
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 71263 commands (5 MiB/s), PCIeRdCur: 7
+0 blocks/s (0 MiB/s) via 70838 commands (5 MiB/s), PCIeRdCur: 6
+0 blocks/s (0 MiB/s) via 70481 commands (5 MiB/s), PCIeRdCur: 0
+0 blocks/s (0 MiB/s) via 71224 commands (5 MiB/s), PCIeRdCur: 10
+0 blocks/s (0 MiB/s) via 71604 commands (5 MiB/s), PCIeRdCur: 1364
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 1387 over 5.00s (277 per second)
+→ RFO-hits-filtered with flush
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 68871 commands (5 MiB/s), RFO: 68883
+0 blocks/s (0 MiB/s) via 69077 commands (5 MiB/s), RFO: 69073
+0 blocks/s (0 MiB/s) via 68989 commands (5 MiB/s), RFO: 68989
+0 blocks/s (0 MiB/s) via 68951 commands (5 MiB/s), RFO: 68951
+0 blocks/s (0 MiB/s) via 68950 commands (5 MiB/s), RFO: 68952
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 344848 over 5.00s (68961 per second)
+→ RFO-misses-filtered with flush
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 69133 commands (5 MiB/s), RFO: 2
+0 blocks/s (0 MiB/s) via 69186 commands (5 MiB/s), RFO: 6
+0 blocks/s (0 MiB/s) via 69069 commands (5 MiB/s), RFO: 5
+0 blocks/s (0 MiB/s) via 68942 commands (5 MiB/s), RFO: 11
+0 blocks/s (0 MiB/s) via 69026 commands (5 MiB/s), RFO: 4
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 28 over 5.00s (6 per second)
+→ ItoM-hits-filtered with flush
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 69779 commands (5 MiB/s), ItoM: 5
+0 blocks/s (0 MiB/s) via 70786 commands (5 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 70735 commands (5 MiB/s), ItoM: 5
+0 blocks/s (0 MiB/s) via 70776 commands (5 MiB/s), ItoM: 1
+0 blocks/s (0 MiB/s) via 70808 commands (5 MiB/s), ItoM: 0
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 11 over 5.00s (2 per second)
+→ ItoM-misses-filtered with flush
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 69117 commands (5 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 69002 commands (5 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 68929 commands (5 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 69010 commands (5 MiB/s), ItoM: 8
+0 blocks/s (0 MiB/s) via 68961 commands (5 MiB/s), ItoM: 0
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 8 over 5.00s (2 per second)
+→ PCIeRdCur-hits with noop
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/noop.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Don't do anything.
+
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 6
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 2
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 1513
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 0
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 1521 over 5.00s (304 per second)
+→ PCIeRdCur-misses with noop
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/noop.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Don't do anything.
+
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 4
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 2
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), PCIeRdCur: 251
+
+Time limit reached after 5s, exiting…
+
+
+PCIeRdCur: 257 over 5.00s (51 per second)
+→ RFO-hits-filtered with noop
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/noop.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Don't do anything.
+
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 2
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 104
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 106 over 5.00s (21 per second)
+→ RFO-misses-filtered with noop
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/noop.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Don't do anything.
+
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 4
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 1
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 3
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 1
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), RFO: 0
+
+Time limit reached after 5s, exiting…
+
+
+RFO: 9 over 5.00s (2 per second)
+→ ItoM-hits-filtered with noop
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/noop.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Don't do anything.
+
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 7
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 8
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 15 over 5.00s (3 per second)
+→ ItoM-misses-filtered with noop
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/noop.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Don't do anything.
+
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+0 blocks/s (0 MiB/s) via 0 commands (0 MiB/s), ItoM: 0
+
+Time limit reached after 5s, exiting…
+
+
+ItoM: 0 over 5.00s (0 per second)
