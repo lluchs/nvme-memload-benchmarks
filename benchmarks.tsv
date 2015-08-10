@@ -21,6 +21,7 @@ parsec	2	i30pc80	1	./parsec/runs2/i30pc80/benchmark1.csv
 parsec	2	i30pc80	2	./parsec/runs2/i30pc80/benchmark2.csv
 parsec	2	i30pc80	3	./parsec/runs2/i30pc80/benchmark3.csv
 parsec	2	i30pc80	4	./parsec/runs2/i30pc80/benchmark4.csv
+parsec	2	i30pc80	5	./parsec/runs2/i30pc80/benchmark5.csv	1 channel
 perfkit	1	i30pc74	00	./perfkit/runs/i30pc74/benchmark1-00.csv	plain
 perfkit	1	i30pc74	01	./perfkit/runs/i30pc74/benchmark1-01.csv	-c once
 perfkit	1	i30pc74	02	./perfkit/runs/i30pc74/benchmark1-02.csv	-c always
