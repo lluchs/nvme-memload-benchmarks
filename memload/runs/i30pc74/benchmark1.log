@@ -1,0 +1,881 @@
+🕑	time	workers	pattern	blocks	commands
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+35989 blocks/s (140 MiB/s) via 35989 commands (2 MiB/s)
+36160 blocks/s (141 MiB/s) via 36160 commands (2 MiB/s)
+36371 blocks/s (142 MiB/s) via 36371 commands (2 MiB/s)
+36159 blocks/s (141 MiB/s) via 36159 commands (2 MiB/s)
+36476 blocks/s (142 MiB/s) via 36476 commands (2 MiB/s)
+37078 blocks/s (144 MiB/s) via 37078 commands (2 MiB/s)
+35909 blocks/s (140 MiB/s) via 35909 commands (2 MiB/s)
+36628 blocks/s (143 MiB/s) via 36628 commands (2 MiB/s)
+36619 blocks/s (143 MiB/s) via 36619 commands (2 MiB/s)
+36067 blocks/s (140 MiB/s) via 36067 commands (2 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	1	single-read	363456	363456
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+59556 blocks/s (232 MiB/s) via 59556 commands (4 MiB/s)
+59437 blocks/s (232 MiB/s) via 59437 commands (4 MiB/s)
+59470 blocks/s (232 MiB/s) via 59470 commands (4 MiB/s)
+59447 blocks/s (232 MiB/s) via 59447 commands (4 MiB/s)
+59480 blocks/s (232 MiB/s) via 59480 commands (4 MiB/s)
+59345 blocks/s (231 MiB/s) via 59345 commands (4 MiB/s)
+59494 blocks/s (232 MiB/s) via 59494 commands (4 MiB/s)
+59694 blocks/s (233 MiB/s) via 59694 commands (4 MiB/s)
+59496 blocks/s (232 MiB/s) via 59496 commands (4 MiB/s)
+59428 blocks/s (232 MiB/s) via 59428 commands (4 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	1	single-write	594847	594847
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+117738 blocks/s (459 MiB/s)
+113801 blocks/s (444 MiB/s)
+113150 blocks/s (441 MiB/s)
+111538 blocks/s (435 MiB/s)
+114917 blocks/s (448 MiB/s)
+117459 blocks/s (458 MiB/s)
+120435 blocks/s (470 MiB/s)
+112251 blocks/s (438 MiB/s)
+111166 blocks/s (434 MiB/s)
+109523 blocks/s (427 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	1	random-read	1141978	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+291958 blocks/s (1140 MiB/s)
+290408 blocks/s (1134 MiB/s)
+292671 blocks/s (1143 MiB/s)
+290687 blocks/s (1135 MiB/s)
+291152 blocks/s (1137 MiB/s)
+290811 blocks/s (1135 MiB/s)
+291245 blocks/s (1137 MiB/s)
+291183 blocks/s (1137 MiB/s)
+291152 blocks/s (1137 MiB/s)
+290873 blocks/s (1136 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	1	random-write	2912140	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 52053 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51588 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51477 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51511 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51503 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51499 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51470 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51514 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51457 commands (3 MiB/s)
+0 blocks/s (0 MiB/s) via 51494 commands (3 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	1	flush	0	515566
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+63239 blocks/s (247 MiB/s) via 63239 commands (4 MiB/s)
+62066 blocks/s (242 MiB/s) via 62066 commands (4 MiB/s)
+62862 blocks/s (245 MiB/s) via 62862 commands (4 MiB/s)
+62941 blocks/s (245 MiB/s) via 62941 commands (4 MiB/s)
+63975 blocks/s (249 MiB/s) via 63975 commands (4 MiB/s)
+61184 blocks/s (239 MiB/s) via 61184 commands (4 MiB/s)
+62903 blocks/s (245 MiB/s) via 62903 commands (4 MiB/s)
+63540 blocks/s (248 MiB/s) via 63540 commands (4 MiB/s)
+62861 blocks/s (245 MiB/s) via 62861 commands (4 MiB/s)
+63237 blocks/s (247 MiB/s) via 63237 commands (4 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	2	single-read	628808	628808
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+119152 blocks/s (465 MiB/s) via 119152 commands (9 MiB/s)
+119554 blocks/s (467 MiB/s) via 119554 commands (9 MiB/s)
+119410 blocks/s (466 MiB/s) via 119410 commands (9 MiB/s)
+120115 blocks/s (469 MiB/s) via 120115 commands (9 MiB/s)
+119517 blocks/s (466 MiB/s) via 119517 commands (9 MiB/s)
+119772 blocks/s (467 MiB/s) via 119772 commands (9 MiB/s)
+120273 blocks/s (469 MiB/s) via 120273 commands (9 MiB/s)
+119426 blocks/s (466 MiB/s) via 119426 commands (9 MiB/s)
+119490 blocks/s (466 MiB/s) via 119490 commands (9 MiB/s)
+120902 blocks/s (472 MiB/s) via 120902 commands (9 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	2	single-write	1197611	1197611
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+139593 blocks/s (545 MiB/s)
+136493 blocks/s (533 MiB/s)
+139438 blocks/s (544 MiB/s)
+136958 blocks/s (534 MiB/s)
+136338 blocks/s (532 MiB/s)
+139686 blocks/s (545 MiB/s)
+137361 blocks/s (536 MiB/s)
+136555 blocks/s (533 MiB/s)
+139221 blocks/s (543 MiB/s)
+136958 blocks/s (534 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	2	random-read	1378601	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+355167 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355291 blocks/s (1387 MiB/s)
+355260 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	2	random-write	3553034	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 104238 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 101847 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102562 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102087 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102206 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102622 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102242 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102412 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102268 commands (7 MiB/s)
+0 blocks/s (0 MiB/s) via 102778 commands (7 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	2	flush	0	1025262
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+88811 blocks/s (346 MiB/s) via 88811 commands (6 MiB/s)
+86674 blocks/s (338 MiB/s) via 86674 commands (6 MiB/s)
+86872 blocks/s (339 MiB/s) via 86872 commands (6 MiB/s)
+87841 blocks/s (343 MiB/s) via 87841 commands (6 MiB/s)
+88797 blocks/s (346 MiB/s) via 88797 commands (6 MiB/s)
+88157 blocks/s (344 MiB/s) via 88157 commands (6 MiB/s)
+87090 blocks/s (340 MiB/s) via 87090 commands (6 MiB/s)
+87093 blocks/s (340 MiB/s) via 87093 commands (6 MiB/s)
+86836 blocks/s (339 MiB/s) via 86836 commands (6 MiB/s)
+88085 blocks/s (344 MiB/s) via 88085 commands (6 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	3	single-read	876256	876256
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+177871 blocks/s (694 MiB/s) via 177871 commands (13 MiB/s)
+177724 blocks/s (694 MiB/s) via 177724 commands (13 MiB/s)
+177645 blocks/s (693 MiB/s) via 177645 commands (13 MiB/s)
+177585 blocks/s (693 MiB/s) via 177585 commands (13 MiB/s)
+177676 blocks/s (694 MiB/s) via 177676 commands (13 MiB/s)
+177608 blocks/s (693 MiB/s) via 177608 commands (13 MiB/s)
+177672 blocks/s (694 MiB/s) via 177672 commands (13 MiB/s)
+177541 blocks/s (693 MiB/s) via 177541 commands (13 MiB/s)
+177775 blocks/s (694 MiB/s) via 177775 commands (13 MiB/s)
+177715 blocks/s (694 MiB/s) via 177715 commands (13 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	3	single-write	1776812	1776812
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+133393 blocks/s (521 MiB/s)
+133579 blocks/s (521 MiB/s)
+134664 blocks/s (526 MiB/s)
+130510 blocks/s (509 MiB/s)
+131626 blocks/s (514 MiB/s)
+135036 blocks/s (527 MiB/s)
+134540 blocks/s (525 MiB/s)
+134726 blocks/s (526 MiB/s)
+131378 blocks/s (513 MiB/s)
+131471 blocks/s (513 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	3	random-read	1330923	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+355229 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355291 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355353 blocks/s (1388 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	3	random-write	3553251	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 172734 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 171227 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 172237 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 173411 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 171915 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 172135 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 172547 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 174529 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 173257 commands (13 MiB/s)
+0 blocks/s (0 MiB/s) via 172520 commands (13 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	3	flush	0	1726512
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+107865 blocks/s (421 MiB/s) via 107865 commands (8 MiB/s)
+104549 blocks/s (408 MiB/s) via 104549 commands (7 MiB/s)
+105407 blocks/s (411 MiB/s) via 105407 commands (8 MiB/s)
+104401 blocks/s (407 MiB/s) via 104401 commands (7 MiB/s)
+107229 blocks/s (418 MiB/s) via 107229 commands (8 MiB/s)
+106139 blocks/s (414 MiB/s) via 106139 commands (8 MiB/s)
+105852 blocks/s (413 MiB/s) via 105852 commands (8 MiB/s)
+104995 blocks/s (410 MiB/s) via 104995 commands (8 MiB/s)
+106532 blocks/s (416 MiB/s) via 106532 commands (8 MiB/s)
+104731 blocks/s (409 MiB/s) via 104731 commands (7 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	4	single-read	1057700	1057700
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+181037 blocks/s (707 MiB/s) via 181037 commands (13 MiB/s)
+181166 blocks/s (707 MiB/s) via 181166 commands (13 MiB/s)
+181146 blocks/s (707 MiB/s) via 181146 commands (13 MiB/s)
+181141 blocks/s (707 MiB/s) via 181141 commands (13 MiB/s)
+181167 blocks/s (707 MiB/s) via 181167 commands (13 MiB/s)
+181148 blocks/s (707 MiB/s) via 181148 commands (13 MiB/s)
+181143 blocks/s (707 MiB/s) via 181143 commands (13 MiB/s)
+181169 blocks/s (707 MiB/s) via 181169 commands (13 MiB/s)
+181135 blocks/s (707 MiB/s) via 181135 commands (13 MiB/s)
+181152 blocks/s (707 MiB/s) via 181152 commands (13 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	4	single-write	1811404	1811404
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+135842 blocks/s (530 MiB/s)
+137857 blocks/s (538 MiB/s)
+139841 blocks/s (546 MiB/s)
+131471 blocks/s (513 MiB/s)
+132773 blocks/s (518 MiB/s)
+137640 blocks/s (537 MiB/s)
+135315 blocks/s (528 MiB/s)
+130789 blocks/s (510 MiB/s)
+131316 blocks/s (512 MiB/s)
+132587 blocks/s (517 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	4	random-read	1345431	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	4	random-write	3553251	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 242814 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 240491 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 240394 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 241989 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 244523 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 243790 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 241347 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 243578 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 240984 commands (18 MiB/s)
+0 blocks/s (0 MiB/s) via 242026 commands (18 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	4	flush	0	2421936
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+114531 blocks/s (447 MiB/s) via 114531 commands (8 MiB/s)
+114631 blocks/s (447 MiB/s) via 114631 commands (8 MiB/s)
+113254 blocks/s (442 MiB/s) via 113254 commands (8 MiB/s)
+113002 blocks/s (441 MiB/s) via 113002 commands (8 MiB/s)
+113972 blocks/s (445 MiB/s) via 113972 commands (8 MiB/s)
+114397 blocks/s (446 MiB/s) via 114397 commands (8 MiB/s)
+112374 blocks/s (438 MiB/s) via 112374 commands (8 MiB/s)
+113952 blocks/s (445 MiB/s) via 113952 commands (8 MiB/s)
+112933 blocks/s (441 MiB/s) via 112933 commands (8 MiB/s)
+112460 blocks/s (439 MiB/s) via 112460 commands (8 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	5	single-read	1135506	1135506
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+181052 blocks/s (707 MiB/s) via 181052 commands (13 MiB/s)
+181174 blocks/s (707 MiB/s) via 181174 commands (13 MiB/s)
+181156 blocks/s (707 MiB/s) via 181156 commands (13 MiB/s)
+181155 blocks/s (707 MiB/s) via 181155 commands (13 MiB/s)
+181163 blocks/s (707 MiB/s) via 181163 commands (13 MiB/s)
+181157 blocks/s (707 MiB/s) via 181157 commands (13 MiB/s)
+181153 blocks/s (707 MiB/s) via 181153 commands (13 MiB/s)
+181173 blocks/s (707 MiB/s) via 181173 commands (13 MiB/s)
+181156 blocks/s (707 MiB/s) via 181156 commands (13 MiB/s)
+181161 blocks/s (707 MiB/s) via 181161 commands (13 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	5	single-write	1811500	1811500
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+136369 blocks/s (532 MiB/s)
+134974 blocks/s (527 MiB/s)
+135656 blocks/s (529 MiB/s)
+131657 blocks/s (514 MiB/s)
+134323 blocks/s (524 MiB/s)
+136896 blocks/s (534 MiB/s)
+134044 blocks/s (523 MiB/s)
+133827 blocks/s (522 MiB/s)
+135780 blocks/s (530 MiB/s)
+134013 blocks/s (523 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	5	random-read	1347539	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355291 blocks/s (1387 MiB/s)
+355384 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355291 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	5	random-write	3553251	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 500748 commands (38 MiB/s)
+0 blocks/s (0 MiB/s) via 522209 commands (39 MiB/s)
+0 blocks/s (0 MiB/s) via 527698 commands (40 MiB/s)
+0 blocks/s (0 MiB/s) via 520549 commands (39 MiB/s)
+0 blocks/s (0 MiB/s) via 525326 commands (40 MiB/s)
+0 blocks/s (0 MiB/s) via 524852 commands (40 MiB/s)
+0 blocks/s (0 MiB/s) via 526251 commands (40 MiB/s)
+0 blocks/s (0 MiB/s) via 522074 commands (39 MiB/s)
+0 blocks/s (0 MiB/s) via 527259 commands (40 MiB/s)
+0 blocks/s (0 MiB/s) via 534280 commands (40 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	5	flush	0	5231246
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+118566 blocks/s (463 MiB/s) via 118566 commands (9 MiB/s)
+118608 blocks/s (463 MiB/s) via 118608 commands (9 MiB/s)
+116961 blocks/s (456 MiB/s) via 116961 commands (8 MiB/s)
+115964 blocks/s (452 MiB/s) via 115964 commands (8 MiB/s)
+116487 blocks/s (455 MiB/s) via 116487 commands (8 MiB/s)
+117487 blocks/s (458 MiB/s) via 117487 commands (8 MiB/s)
+115653 blocks/s (451 MiB/s) via 115653 commands (8 MiB/s)
+117160 blocks/s (457 MiB/s) via 117160 commands (8 MiB/s)
+119167 blocks/s (465 MiB/s) via 119167 commands (9 MiB/s)
+116331 blocks/s (454 MiB/s) via 116331 commands (8 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	6	single-read	1172384	1172384
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+181095 blocks/s (707 MiB/s) via 181095 commands (13 MiB/s)
+181149 blocks/s (707 MiB/s) via 181149 commands (13 MiB/s)
+181155 blocks/s (707 MiB/s) via 181155 commands (13 MiB/s)
+181171 blocks/s (707 MiB/s) via 181171 commands (13 MiB/s)
+181152 blocks/s (707 MiB/s) via 181152 commands (13 MiB/s)
+181171 blocks/s (707 MiB/s) via 181171 commands (13 MiB/s)
+181147 blocks/s (707 MiB/s) via 181147 commands (13 MiB/s)
+181154 blocks/s (707 MiB/s) via 181154 commands (13 MiB/s)
+181173 blocks/s (707 MiB/s) via 181173 commands (13 MiB/s)
+181155 blocks/s (707 MiB/s) via 181155 commands (13 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	6	single-write	1811522	1811522
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+133765 blocks/s (522 MiB/s)
+129673 blocks/s (506 MiB/s)
+131471 blocks/s (513 MiB/s)
+129735 blocks/s (506 MiB/s)
+133300 blocks/s (520 MiB/s)
+135439 blocks/s (529 MiB/s)
+130634 blocks/s (510 MiB/s)
+135966 blocks/s (531 MiB/s)
+137361 blocks/s (536 MiB/s)
+137113 blocks/s (535 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	6	random-read	1334457	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+355384 blocks/s (1388 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355291 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355291 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	6	random-write	3553375	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 558704 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 558766 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559382 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559135 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559210 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 558844 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559194 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 558912 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559358 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559478 commands (42 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	6	flush	0	5590983
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+121391 blocks/s (474 MiB/s) via 121391 commands (9 MiB/s)
+121316 blocks/s (473 MiB/s) via 121316 commands (9 MiB/s)
+119494 blocks/s (466 MiB/s) via 119494 commands (9 MiB/s)
+120040 blocks/s (468 MiB/s) via 120040 commands (9 MiB/s)
+119284 blocks/s (465 MiB/s) via 119284 commands (9 MiB/s)
+120126 blocks/s (469 MiB/s) via 120126 commands (9 MiB/s)
+118027 blocks/s (461 MiB/s) via 118027 commands (9 MiB/s)
+118037 blocks/s (461 MiB/s) via 118037 commands (9 MiB/s)
+120058 blocks/s (468 MiB/s) via 120058 commands (9 MiB/s)
+117975 blocks/s (460 MiB/s) via 117975 commands (9 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	7	single-read	1195748	1195748
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+181073 blocks/s (707 MiB/s) via 181073 commands (13 MiB/s)
+181174 blocks/s (707 MiB/s) via 181174 commands (13 MiB/s)
+181148 blocks/s (707 MiB/s) via 181148 commands (13 MiB/s)
+181155 blocks/s (707 MiB/s) via 181155 commands (13 MiB/s)
+181174 blocks/s (707 MiB/s) via 181174 commands (13 MiB/s)
+181157 blocks/s (707 MiB/s) via 181157 commands (13 MiB/s)
+181157 blocks/s (707 MiB/s) via 181157 commands (13 MiB/s)
+181164 blocks/s (707 MiB/s) via 181164 commands (13 MiB/s)
+181157 blocks/s (707 MiB/s) via 181157 commands (13 MiB/s)
+181155 blocks/s (707 MiB/s) via 181155 commands (13 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	7	single-write	1811514	1811514
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+135842 blocks/s (530 MiB/s)
+130603 blocks/s (510 MiB/s)
+131688 blocks/s (514 MiB/s)
+129797 blocks/s (507 MiB/s)
+131502 blocks/s (513 MiB/s)
+134137 blocks/s (523 MiB/s)
+131130 blocks/s (512 MiB/s)
+136245 blocks/s (532 MiB/s)
+133920 blocks/s (523 MiB/s)
+130541 blocks/s (509 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	7	random-read	1325405	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+355291 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355291 blocks/s (1387 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	7	random-write	3553220	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 559423 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559451 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559417 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559420 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559491 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559343 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559829 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559826 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559715 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559681 commands (42 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	7	flush	0	5595596
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+123375 blocks/s (481 MiB/s) via 123375 commands (9 MiB/s)
+122990 blocks/s (480 MiB/s) via 122990 commands (9 MiB/s)
+122251 blocks/s (477 MiB/s) via 122251 commands (9 MiB/s)
+122002 blocks/s (476 MiB/s) via 122002 commands (9 MiB/s)
+120086 blocks/s (469 MiB/s) via 120086 commands (9 MiB/s)
+122030 blocks/s (476 MiB/s) via 122030 commands (9 MiB/s)
+120476 blocks/s (470 MiB/s) via 120476 commands (9 MiB/s)
+120476 blocks/s (470 MiB/s) via 120476 commands (9 MiB/s)
+121021 blocks/s (472 MiB/s) via 121021 commands (9 MiB/s)
+119183 blocks/s (465 MiB/s) via 119183 commands (9 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	8	single-read	1213890	1213890
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+181074 blocks/s (707 MiB/s) via 181074 commands (13 MiB/s)
+181172 blocks/s (707 MiB/s) via 181172 commands (13 MiB/s)
+181156 blocks/s (707 MiB/s) via 181156 commands (13 MiB/s)
+181150 blocks/s (707 MiB/s) via 181150 commands (13 MiB/s)
+181171 blocks/s (707 MiB/s) via 181171 commands (13 MiB/s)
+181155 blocks/s (707 MiB/s) via 181155 commands (13 MiB/s)
+181157 blocks/s (707 MiB/s) via 181157 commands (13 MiB/s)
+181170 blocks/s (707 MiB/s) via 181170 commands (13 MiB/s)
+181150 blocks/s (707 MiB/s) via 181150 commands (13 MiB/s)
+181154 blocks/s (707 MiB/s) via 181154 commands (13 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	8	single-write	1811509	1811509
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+132711 blocks/s (518 MiB/s)
+131874 blocks/s (515 MiB/s)
+136307 blocks/s (532 MiB/s)
+132990 blocks/s (519 MiB/s)
+131192 blocks/s (512 MiB/s)
+133300 blocks/s (520 MiB/s)
+132153 blocks/s (516 MiB/s)
+135253 blocks/s (528 MiB/s)
+131533 blocks/s (513 MiB/s)
+131750 blocks/s (514 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	8	random-read	1329063	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+355322 blocks/s (1387 MiB/s)
+355260 blocks/s (1387 MiB/s)
+355074 blocks/s (1387 MiB/s)
+355136 blocks/s (1387 MiB/s)
+355291 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355353 blocks/s (1388 MiB/s)
+355322 blocks/s (1387 MiB/s)
+355322 blocks/s (1387 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	8	random-write	3552755	0
+Success formatting namespace:1
+SSD: INTEL SSDPEDMW400G4                      (CVCQ5153008P400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Loading pattern /home/werling/tools/nvme-memload/patterns/flush.so
+Memory buffer size: 0 blocks (0 MiB)
+Pattern loaded: Send only flush commands, no data transfer.
+
+0 blocks/s (0 MiB/s) via 558885 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559668 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559939 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559922 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559934 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559929 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559932 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559911 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559925 commands (42 MiB/s)
+0 blocks/s (0 MiB/s) via 559947 commands (42 MiB/s)
+
+Time limit reached after 10s, exiting…
+🕑	10	8	flush	0	5597992
