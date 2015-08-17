@@ -19,3 +19,8 @@ In the previous benchmarks, Parsec has sometimes overwritten the pinning.
  - -j8
  - -b 262144 (= 1 GiB)
  - taskset: 1/7
+
+## benchmark5/5a
+ - -j8
+ - 1 memory channel
+ - taskset: 1/7

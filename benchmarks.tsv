@@ -1,28 +1,29 @@
 benchmark	run	pc	n	file	desc
-parsec	1	i30pc74	1	./parsec/runs/i30pc74/benchmark1.csv parsec	1	i30pc74	2	./parsec/runs/i30pc74/benchmark2.csv
-parsec	1	i30pc74	3	./parsec/runs/i30pc74/benchmark3.csv
-parsec	1	i30pc74	4	./parsec/runs/i30pc74/benchmark4.csv
-parsec	1	i30pc74	5	./parsec/runs/i30pc74/benchmark5.csv
-parsec	1	i30pc74	6	./parsec/runs/i30pc74/benchmark6.csv
-parsec	1	i30pc74	7	./parsec/runs/i30pc74/benchmark7.csv
-parsec	1	i30pc74	8	./parsec/runs/i30pc74/benchmark8.csv
-parsec	1	i30pc80	1	./parsec/runs/i30pc80/benchmark1.csv
-parsec	1	i30pc80	2	./parsec/runs/i30pc80/benchmark2.csv
-parsec	1	i30pc80	3	./parsec/runs/i30pc80/benchmark3.csv
-parsec	1	i30pc80	4	./parsec/runs/i30pc80/benchmark4.csv
-parsec	1	i30pc80	5	./parsec/runs/i30pc80/benchmark5.csv
-parsec	1	i30pc80	6	./parsec/runs/i30pc80/benchmark6.csv
-parsec	2	i30pc74	1	./parsec/runs2/i30pc74/benchmark1.csv
-parsec	2	i30pc74	2	./parsec/runs2/i30pc74/benchmark2.csv
-parsec	2	i30pc74	3	./parsec/runs2/i30pc74/benchmark3.csv
-parsec	2	i30pc74	4	./parsec/runs2/i30pc74/benchmark4.csv
-parsec	2	i30pc74	5	./parsec/runs2/i30pc74/benchmark5.csv	1 channel
-parsec	2	i30pc80	1	./parsec/runs2/i30pc80/benchmark1.csv
-parsec	2	i30pc80	2	./parsec/runs2/i30pc80/benchmark2.csv
-parsec	2	i30pc80	3	./parsec/runs2/i30pc80/benchmark3.csv
-parsec	2	i30pc80	4	./parsec/runs2/i30pc80/benchmark4.csv
-parsec	2	i30pc80	5	./parsec/runs2/i30pc80/benchmark5.csv	1 channel
-parsec	2	i30pc80	5a	./parsec/runs2/i30pc80/benchmark5a.csv	1 channel
+parsec	1	i30pc74	1	./parsec/runs/i30pc74/benchmark1.csv	HyperThreading, -j1
+parsec	1	i30pc74	2	./parsec/runs/i30pc74/benchmark2.csv	HyperThreading, -j4
+parsec	1	i30pc74	3	./parsec/runs/i30pc74/benchmark3.csv	-j4, taskset: 1/3
+parsec	1	i30pc74	4	./parsec/runs/i30pc74/benchmark4.csv	-j4 -c once, taskset: 1/3
+parsec	1	i30pc74	5	./parsec/runs/i30pc74/benchmark5.csv	-j4 -c always, taskset: 1/3
+parsec	1	i30pc74	6	./parsec/runs/i30pc74/benchmark6.csv	-j4, -b 262144 (= 1 GiB), taskset: 1/3
+parsec	1	i30pc74	7	./parsec/runs/i30pc74/benchmark7.csv	-j4, no pinning
+parsec	1	i30pc74	8	./parsec/runs/i30pc74/benchmark8.csv	-j4 -l 90000 (½ single bandwidth), taskset: 1/3
+parsec	1	i30pc80	1	./parsec/runs/i30pc80/benchmark1.csv	-j1
+parsec	1	i30pc80	2	./parsec/runs/i30pc80/benchmark2.csv	-j8, taskset: 1/7
+parsec	1	i30pc80	3	./parsec/runs/i30pc80/benchmark3.csv	-j8 -c once, taskset: 1/7
+parsec	1	i30pc80	4	./parsec/runs/i30pc80/benchmark4.csv	-j8 -c always, taskset: 1/7
+parsec	1	i30pc80	5	./parsec/runs/i30pc80/benchmark5.csv	-j8, -b 262144 (= 1 GiB), taskset: 1/7
+parsec	1	i30pc80	6	./parsec/runs/i30pc80/benchmark6.csv	-j8, no pinning
+parsec	2	i30pc74	1	./parsec/runs2/i30pc74/benchmark1.csv	-j4, taskset: 1/3
+parsec	2	i30pc74	2	./parsec/runs2/i30pc74/benchmark2.csv	-j4 -c once, taskset: 1/3
+parsec	2	i30pc74	3	./parsec/runs2/i30pc74/benchmark3.csv	-j4 -c always, taskset: 1/3
+parsec	2	i30pc74	4	./parsec/runs2/i30pc74/benchmark4.csv	-j4, -b 262144 (= 1 GiB), taskset: 1/3
+parsec	2	i30pc74	5	./parsec/runs2/i30pc74/benchmark5.csv	-j4, 1 channel, taskset: 1/3
+parsec	2	i30pc80	1	./parsec/runs2/i30pc80/benchmark1.csv	-j8, taskset: 1/7
+parsec	2	i30pc80	2	./parsec/runs2/i30pc80/benchmark2.csv	-j8 -c once, taskset: 1/7
+parsec	2	i30pc80	3	./parsec/runs2/i30pc80/benchmark3.csv	-j8 -c always, taskset: 1/7
+parsec	2	i30pc80	4	./parsec/runs2/i30pc80/benchmark4.csv	-j8, -b 262144 (= 1 GiB), taskset: 1/7
+parsec	2	i30pc80	5	./parsec/runs2/i30pc80/benchmark5.csv	-j8, 1 channel, taskset: 1/7 (aborted early)
+parsec	2	i30pc80	5a	./parsec/runs2/i30pc80/benchmark5a.csv	-j8, 1 channel, taskset: 1/7
 perfkit	1	i30pc74	00	./perfkit/runs/i30pc74/benchmark1-00.csv	plain
 perfkit	1	i30pc74	01	./perfkit/runs/i30pc74/benchmark1-01.csv	-c once
 perfkit	1	i30pc74	02	./perfkit/runs/i30pc74/benchmark1-02.csv	-c always
