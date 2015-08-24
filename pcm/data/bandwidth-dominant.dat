@@ -1,0 +1,9 @@
+counter pattern hits misses expected
+ItoM single-write 64000000 327211 -1
+ItoM-ex single-write 0 0 32125000
+PCIeRdCur single-read 32500634 65449 -1
+PCIeRdCur-ex single-read 0 0 16250000
+ItoM random-write 204800000 1490200 -1
+ItoM-ex random-write 0 0 198425000
+PCIeRdCur random-read 102700369 174028 -1
+PCIeRdCur-ex random-read 0 0 99250000

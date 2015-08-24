@@ -1,0 +1,13 @@
+counter pattern hits misses expected
+PCIeRdCur single-write 1326329 266852 -1
+PCIeRdCur-ex single-write 0 0 500000
+ItoM single-read 0 19 -1
+ItoM-ex single-read 0 0 62500
+PCIeRdCur random-write 560359 50264 -1
+PCIeRdCur-ex random-write 0 0 100000
+ItoM random-read 18 6 -1
+ItoM-ex random-read 0 0 12500
+PCIeRdCur flush 368160 1305 -1
+PCIeRdCur-ex flush 0 0 350000
+ItoM flush 0 0 -1
+ItoM-ex flush 0 0 87500
