@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Optional parameter
-${COUNTERS:='PCIeRdCur-hits PCIeRdCur-misses RFO-hits-filtered RFO-misses-filtered ItoM-hits-filtered ItoM-misses-filtered'}
+: ${COUNTERS:='PCIeRdCur-hits PCIeRdCur-misses RFO-hits-filtered RFO-misses-filtered ItoM-hits-filtered ItoM-misses-filtered'}
 
 # Required parameters
-${NAME:?}
-${PATTERN:?}
-${LIMIT:?}
+: ${NAME:?}
+: ${PATTERN:?}
+: ${LIMIT:?}
 
 sudo nvme format /dev/nvme0n1 -l3
 
