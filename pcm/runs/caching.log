@@ -26,18 +26,17 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Sequentially access a single block.
 
-82588 blocks/s (322 MiB/s) via 82588 commands (6 MiB/s), ItoM: 10571904
-80090 blocks/s (312 MiB/s) via 80090 commands (6 MiB/s), ItoM: 10251148
-80345 blocks/s (313 MiB/s) via 80345 commands (6 MiB/s), ItoM: 10284262
-83715 blocks/s (327 MiB/s) via 83715 commands (6 MiB/s), ItoM: 10715365
-85422 blocks/s (333 MiB/s) via 85422 commands (6 MiB/s), ItoM: 10933996
-85671 blocks/s (334 MiB/s) via 85671 commands (6 MiB/s), ItoM: 10965941
-2169 blocks/s (8 MiB/s) via 2169 commands (0 MiB/s), ItoM: 277384
+80524 blocks/s (314 MiB/s) via 80524 commands (6 MiB/s), ItoM: 10307633
+88364 blocks/s (345 MiB/s) via 88364 commands (6 MiB/s), ItoM: 11310331
+84687 blocks/s (330 MiB/s) via 84687 commands (6 MiB/s), ItoM: 10840154
+83420 blocks/s (325 MiB/s) via 83420 commands (6 MiB/s), ItoM: 10677490
+84829 blocks/s (331 MiB/s) via 84829 commands (6 MiB/s), ItoM: 10858254
+78176 blocks/s (305 MiB/s) via 78176 commands (5 MiB/s), ItoM: 10006144
 
 Command limit of 500000 reached, exiting…
 
 
-ItoM: 64000000 over 7.00s (9141327 per second)
+ItoM: 64000006 over 6.00s (10664928 per second)
 → ItoM-misses-filtered with single-write
 Number of physical cores: 16
 Number of logical cores: 16
@@ -65,18 +64,18 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Sequentially access a single block.
 
-82160 blocks/s (320 MiB/s) via 82160 commands (6 MiB/s), ItoM: 131037
-82726 blocks/s (323 MiB/s) via 82726 commands (6 MiB/s), ItoM: 132674
-83123 blocks/s (324 MiB/s) via 83123 commands (6 MiB/s), ItoM: 134510
-81134 blocks/s (316 MiB/s) via 81134 commands (6 MiB/s), ItoM: 130990
-80280 blocks/s (313 MiB/s) via 80280 commands (6 MiB/s), ItoM: 128908
-84387 blocks/s (329 MiB/s) via 84387 commands (6 MiB/s), ItoM: 135698
-6190 blocks/s (24 MiB/s) via 6190 commands (0 MiB/s), ItoM: 9904
+80455 blocks/s (314 MiB/s) via 80455 commands (6 MiB/s), ItoM: 119157
+82447 blocks/s (322 MiB/s) via 82447 commands (6 MiB/s), ItoM: 125297
+83264 blocks/s (325 MiB/s) via 83264 commands (6 MiB/s), ItoM: 124896
+81883 blocks/s (319 MiB/s) via 81883 commands (6 MiB/s), ItoM: 122880
+81986 blocks/s (320 MiB/s) via 81986 commands (6 MiB/s), ItoM: 122742
+81638 blocks/s (318 MiB/s) via 81638 commands (6 MiB/s), ItoM: 122770
+8327 blocks/s (32 MiB/s) via 8327 commands (0 MiB/s), ItoM: 12120
 
 Command limit of 500000 reached, exiting…
 
 
-ItoM: 803721 over 7.00s (114798 per second)
+ItoM: 749862 over 7.00s (107103 per second)
 Success formatting namespace:1
 → ItoM-hits-filtered with random-write
 Number of physical cores: 16
@@ -105,17 +104,17 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-548545 blocks/s (2142 MiB/s) via 17695 commands (1 MiB/s), ItoM: 36243380
-549382 blocks/s (2146 MiB/s) via 17722 commands (1 MiB/s), ItoM: 36292684
-549320 blocks/s (2145 MiB/s) via 17720 commands (1 MiB/s), ItoM: 36289203
-546747 blocks/s (2135 MiB/s) via 17637 commands (1 MiB/s), ItoM: 36121933
-549971 blocks/s (2148 MiB/s) via 17741 commands (1 MiB/s), ItoM: 36333677
-356035 blocks/s (1390 MiB/s) via 11485 commands (0 MiB/s), ItoM: 23519123
+573779 blocks/s (2241 MiB/s) via 18509 commands (1 MiB/s), ItoM: 37910528
+581529 blocks/s (2271 MiB/s) via 18759 commands (1 MiB/s), ItoM: 38416733
+583513 blocks/s (2279 MiB/s) via 18823 commands (1 MiB/s), ItoM: 38548255
+584505 blocks/s (2283 MiB/s) via 18855 commands (1 MiB/s), ItoM: 38616007
+584040 blocks/s (2281 MiB/s) via 18840 commands (1 MiB/s), ItoM: 38584271
+192634 blocks/s (752 MiB/s) via 6214 commands (0 MiB/s), ItoM: 12724206
 
 Command limit of 100000 reached, exiting…
 
 
-ItoM: 204800000 over 6.00s (34127119 per second)
+ItoM: 204800000 over 6.00s (34127261 per second)
 → ItoM-misses-filtered with random-write
 Number of physical cores: 16
 Number of logical cores: 16
@@ -143,17 +142,17 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-546530 blocks/s (2134 MiB/s) via 17630 commands (1 MiB/s), ItoM: 38014
-545755 blocks/s (2131 MiB/s) via 17605 commands (1 MiB/s), ItoM: 36818
-549010 blocks/s (2144 MiB/s) via 17710 commands (1 MiB/s), ItoM: 37136
-546530 blocks/s (2134 MiB/s) via 17630 commands (1 MiB/s), ItoM: 36926
-543926 blocks/s (2124 MiB/s) via 17546 commands (1 MiB/s), ItoM: 37658
-368249 blocks/s (1438 MiB/s) via 11879 commands (0 MiB/s), ItoM: 25637
+543647 blocks/s (2123 MiB/s) via 17537 commands (1 MiB/s), ItoM: 97780
+544267 blocks/s (2126 MiB/s) via 17557 commands (1 MiB/s), ItoM: 96112
+543213 blocks/s (2121 MiB/s) via 17523 commands (1 MiB/s), ItoM: 96642
+545166 blocks/s (2129 MiB/s) via 17586 commands (1 MiB/s), ItoM: 96320
+545817 blocks/s (2132 MiB/s) via 17607 commands (1 MiB/s), ItoM: 96037
+377890 blocks/s (1476 MiB/s) via 12190 commands (0 MiB/s), ItoM: 66904
 
 Command limit of 100000 reached, exiting…
 
 
-ItoM: 212189 over 6.00s (35358 per second)
+ItoM: 549795 over 6.00s (91617 per second)
 Success formatting namespace:1
 → PCIeRdCur-hits with single-read
 Number of physical cores: 16
@@ -182,17 +181,17 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Sequentially access a single block.
 
-45735 blocks/s (178 MiB/s) via 45735 commands (3 MiB/s), PCIeRdCur: 5946017
-46357 blocks/s (181 MiB/s) via 46357 commands (3 MiB/s), PCIeRdCur: 6026170
-45474 blocks/s (177 MiB/s) via 45474 commands (3 MiB/s), PCIeRdCur: 5911793
-47038 blocks/s (183 MiB/s) via 47038 commands (3 MiB/s), PCIeRdCur: 6114662
-45711 blocks/s (178 MiB/s) via 45711 commands (3 MiB/s), PCIeRdCur: 5942779
-19685 blocks/s (76 MiB/s) via 19685 commands (1 MiB/s), PCIeRdCur: 2559057
+43927 blocks/s (171 MiB/s) via 43927 commands (3 MiB/s), PCIeRdCur: 5711201
+45581 blocks/s (178 MiB/s) via 45581 commands (3 MiB/s), PCIeRdCur: 5925278
+43722 blocks/s (170 MiB/s) via 43722 commands (3 MiB/s), PCIeRdCur: 5683864
+43790 blocks/s (171 MiB/s) via 43790 commands (3 MiB/s), PCIeRdCur: 5692446
+44341 blocks/s (173 MiB/s) via 44341 commands (3 MiB/s), PCIeRdCur: 5764330
+28638 blocks/s (111 MiB/s) via 28638 commands (2 MiB/s), PCIeRdCur: 3723288
 
 Command limit of 250000 reached, exiting…
 
 
-PCIeRdCur: 32500478 over 6.00s (5415734 per second)
+PCIeRdCur: 32500407 over 6.00s (5415824 per second)
 → PCIeRdCur-misses with single-read
 Number of physical cores: 16
 Number of logical cores: 16
@@ -220,17 +219,17 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Sequentially access a single block.
 
-45614 blocks/s (178 MiB/s) via 45614 commands (3 MiB/s), PCIeRdCur: 5249
-45737 blocks/s (178 MiB/s) via 45737 commands (3 MiB/s), PCIeRdCur: 6928
-46711 blocks/s (182 MiB/s) via 46711 commands (3 MiB/s), PCIeRdCur: 16475
-46483 blocks/s (181 MiB/s) via 46483 commands (3 MiB/s), PCIeRdCur: 149821
-45294 blocks/s (176 MiB/s) via 45294 commands (3 MiB/s), PCIeRdCur: 212404
-20161 blocks/s (78 MiB/s) via 20161 commands (1 MiB/s), PCIeRdCur: 110350
+44714 blocks/s (174 MiB/s) via 44714 commands (3 MiB/s), PCIeRdCur: 7983
+43136 blocks/s (168 MiB/s) via 43136 commands (3 MiB/s), PCIeRdCur: 9730
+43517 blocks/s (169 MiB/s) via 43517 commands (3 MiB/s), PCIeRdCur: 10744
+45114 blocks/s (176 MiB/s) via 45114 commands (3 MiB/s), PCIeRdCur: 11455
+44091 blocks/s (172 MiB/s) via 44091 commands (3 MiB/s), PCIeRdCur: 12439
+29428 blocks/s (114 MiB/s) via 29428 commands (2 MiB/s), PCIeRdCur: 9058
 
 Command limit of 250000 reached, exiting…
 
 
-PCIeRdCur: 501227 over 6.00s (83524 per second)
+PCIeRdCur: 61409 over 6.00s (10233 per second)
 Success formatting namespace:1
 → PCIeRdCur-hits with random-read
 Number of physical cores: 16
@@ -259,20 +258,20 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-182838 blocks/s (714 MiB/s) via 5898 commands (0 MiB/s), PCIeRdCur: 12116567
-180141 blocks/s (703 MiB/s) via 5811 commands (0 MiB/s), PCIeRdCur: 11935353
-179707 blocks/s (701 MiB/s) via 5797 commands (0 MiB/s), PCIeRdCur: 11905446
-179738 blocks/s (702 MiB/s) via 5798 commands (0 MiB/s), PCIeRdCur: 11909099
-179304 blocks/s (700 MiB/s) via 5784 commands (0 MiB/s), PCIeRdCur: 11880348
-179025 blocks/s (699 MiB/s) via 5775 commands (0 MiB/s), PCIeRdCur: 11862196
-183241 blocks/s (715 MiB/s) via 5911 commands (0 MiB/s), PCIeRdCur: 12141206
-178715 blocks/s (698 MiB/s) via 5765 commands (0 MiB/s), PCIeRdCur: 11841592
-107291 blocks/s (419 MiB/s) via 3461 commands (0 MiB/s), PCIeRdCur: 7108904
+182590 blocks/s (713 MiB/s) via 5890 commands (0 MiB/s), PCIeRdCur: 12101995
+180451 blocks/s (704 MiB/s) via 5821 commands (0 MiB/s), PCIeRdCur: 11952407
+179397 blocks/s (700 MiB/s) via 5787 commands (0 MiB/s), PCIeRdCur: 11886500
+179986 blocks/s (703 MiB/s) via 5806 commands (0 MiB/s), PCIeRdCur: 11925532
+179800 blocks/s (702 MiB/s) via 5800 commands (0 MiB/s), PCIeRdCur: 11913203
+180327 blocks/s (704 MiB/s) via 5817 commands (0 MiB/s), PCIeRdCur: 11949938
+183334 blocks/s (716 MiB/s) via 5914 commands (0 MiB/s), PCIeRdCur: 12145880
+180141 blocks/s (703 MiB/s) via 5811 commands (0 MiB/s), PCIeRdCur: 11937851
+103974 blocks/s (406 MiB/s) via 3354 commands (0 MiB/s), PCIeRdCur: 6887066
 
 Command limit of 50000 reached, exiting…
 
 
-PCIeRdCur: 102700711 over 9.00s (11409470 per second)
+PCIeRdCur: 102700372 over 9.00s (11409033 per second)
 → PCIeRdCur-misses with random-read
 Number of physical cores: 16
 Number of logical cores: 16
@@ -300,20 +299,343 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 1000 blocks (3 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-179738 blocks/s (702 MiB/s) via 5798 commands (0 MiB/s), PCIeRdCur: 51043
-183520 blocks/s (716 MiB/s) via 5920 commands (0 MiB/s), PCIeRdCur: 56156
-179118 blocks/s (699 MiB/s) via 5778 commands (0 MiB/s), PCIeRdCur: 97993
-179738 blocks/s (702 MiB/s) via 5798 commands (0 MiB/s), PCIeRdCur: 261004
-179800 blocks/s (702 MiB/s) via 5800 commands (0 MiB/s), PCIeRdCur: 275461
-179025 blocks/s (699 MiB/s) via 5775 commands (0 MiB/s), PCIeRdCur: 282840
-179645 blocks/s (701 MiB/s) via 5795 commands (0 MiB/s), PCIeRdCur: 319676
-184884 blocks/s (722 MiB/s) via 5964 commands (0 MiB/s), PCIeRdCur: 377393
-104532 blocks/s (408 MiB/s) via 3372 commands (0 MiB/s), PCIeRdCur: 224358
+180110 blocks/s (703 MiB/s) via 5810 commands (0 MiB/s), PCIeRdCur: 12929
+183427 blocks/s (716 MiB/s) via 5917 commands (0 MiB/s), PCIeRdCur: 15180
+179211 blocks/s (700 MiB/s) via 5781 commands (0 MiB/s), PCIeRdCur: 17317
+178777 blocks/s (698 MiB/s) via 5767 commands (0 MiB/s), PCIeRdCur: 17020
+179149 blocks/s (699 MiB/s) via 5779 commands (0 MiB/s), PCIeRdCur: 18638
+179862 blocks/s (702 MiB/s) via 5802 commands (0 MiB/s), PCIeRdCur: 26076
+180110 blocks/s (703 MiB/s) via 5810 commands (0 MiB/s), PCIeRdCur: 27980
+183985 blocks/s (718 MiB/s) via 5935 commands (0 MiB/s), PCIeRdCur: 28281
+105369 blocks/s (411 MiB/s) via 3399 commands (0 MiB/s), PCIeRdCur: 17024
 
 Command limit of 50000 reached, exiting…
 
 
-PCIeRdCur: 1945924 over 9.00s (216178 per second)
+PCIeRdCur: 180445 over 9.00s (20046 per second)
+Success formatting namespace:1
+→ ItoM-hits-filtered with single-write
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 500000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+80039 blocks/s (312 MiB/s) via 80039 commands (6 MiB/s), ItoM: 10245248
+82056 blocks/s (320 MiB/s) via 82056 commands (6 MiB/s), ItoM: 10503181
+80866 blocks/s (315 MiB/s) via 80866 commands (6 MiB/s), ItoM: 10350963
+82372 blocks/s (321 MiB/s) via 82372 commands (6 MiB/s), ItoM: 10543510
+86363 blocks/s (337 MiB/s) via 86363 commands (6 MiB/s), ItoM: 11054442
+83771 blocks/s (327 MiB/s) via 83771 commands (6 MiB/s), ItoM: 10722617
+4533 blocks/s (17 MiB/s) via 4533 commands (0 MiB/s), ItoM: 580039
+
+Command limit of 500000 reached, exiting…
+
+
+ItoM: 64000000 over 7.00s (9141241 per second)
+→ ItoM-misses-filtered with single-write
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 500000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+80961 blocks/s (316 MiB/s) via 80961 commands (6 MiB/s), ItoM: 18127
+83318 blocks/s (325 MiB/s) via 83318 commands (6 MiB/s), ItoM: 18903
+85021 blocks/s (332 MiB/s) via 85021 commands (6 MiB/s), ItoM: 19133
+87400 blocks/s (341 MiB/s) via 87400 commands (6 MiB/s), ItoM: 19491
+83491 blocks/s (326 MiB/s) via 83491 commands (6 MiB/s), ItoM: 18647
+79809 blocks/s (311 MiB/s) via 79809 commands (6 MiB/s), ItoM: 17934
+
+Command limit of 500000 reached, exiting…
+
+
+ItoM: 112235 over 6.00s (18702 per second)
+Success formatting namespace:1
+→ ItoM-hits-filtered with random-write
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 100000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+546623 blocks/s (2135 MiB/s) via 17633 commands (1 MiB/s), ItoM: 36114598
+546468 blocks/s (2134 MiB/s) via 17628 commands (1 MiB/s), ItoM: 36101978
+545135 blocks/s (2129 MiB/s) via 17585 commands (1 MiB/s), ItoM: 36013510
+546561 blocks/s (2135 MiB/s) via 17631 commands (1 MiB/s), ItoM: 36108814
+544174 blocks/s (2125 MiB/s) via 17554 commands (1 MiB/s), ItoM: 35950812
+371039 blocks/s (1449 MiB/s) via 11969 commands (0 MiB/s), ItoM: 24510288
+
+Command limit of 100000 reached, exiting…
+
+
+ItoM: 204800000 over 6.00s (34126662 per second)
+→ ItoM-misses-filtered with random-write
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 100000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+544918 blocks/s (2128 MiB/s) via 17578 commands (1 MiB/s), ItoM: 165911
+547429 blocks/s (2138 MiB/s) via 17659 commands (1 MiB/s), ItoM: 165830
+545724 blocks/s (2131 MiB/s) via 17604 commands (1 MiB/s), ItoM: 161276
+545259 blocks/s (2129 MiB/s) via 17589 commands (1 MiB/s), ItoM: 163023
+546871 blocks/s (2136 MiB/s) via 17641 commands (1 MiB/s), ItoM: 164507
+369799 blocks/s (1444 MiB/s) via 11929 commands (0 MiB/s), ItoM: 110478
+
+Command limit of 100000 reached, exiting…
+
+
+ItoM: 931025 over 6.00s (155141 per second)
+Success formatting namespace:1
+→ PCIeRdCur-hits with single-read
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 250000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+45323 blocks/s (177 MiB/s) via 45323 commands (3 MiB/s), PCIeRdCur: 5892519
+44800 blocks/s (175 MiB/s) via 44800 commands (3 MiB/s), PCIeRdCur: 5823756
+43869 blocks/s (171 MiB/s) via 43869 commands (3 MiB/s), PCIeRdCur: 5703008
+44304 blocks/s (173 MiB/s) via 44304 commands (3 MiB/s), PCIeRdCur: 5759628
+44848 blocks/s (175 MiB/s) via 44848 commands (3 MiB/s), PCIeRdCur: 5830275
+26856 blocks/s (104 MiB/s) via 26856 commands (2 MiB/s), PCIeRdCur: 3491726
+
+Command limit of 250000 reached, exiting…
+
+
+PCIeRdCur: 32500912 over 6.00s (5415806 per second)
+→ PCIeRdCur-misses with single-read
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 250000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Sequentially access a single block.
+
+46664 blocks/s (182 MiB/s) via 46664 commands (3 MiB/s), PCIeRdCur: 11582
+44979 blocks/s (175 MiB/s) via 44979 commands (3 MiB/s), PCIeRdCur: 13160
+47836 blocks/s (186 MiB/s) via 47836 commands (3 MiB/s), PCIeRdCur: 23245
+47857 blocks/s (186 MiB/s) via 47857 commands (3 MiB/s), PCIeRdCur: 24560
+47624 blocks/s (186 MiB/s) via 47624 commands (3 MiB/s), PCIeRdCur: 24813
+15040 blocks/s (58 MiB/s) via 15040 commands (1 MiB/s), PCIeRdCur: 8549
+
+Command limit of 250000 reached, exiting…
+
+
+PCIeRdCur: 105909 over 6.00s (17649 per second)
+Success formatting namespace:1
+→ PCIeRdCur-hits with random-read
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 50000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+182714 blocks/s (713 MiB/s) via 5894 commands (0 MiB/s), PCIeRdCur: 12106283
+181226 blocks/s (707 MiB/s) via 5846 commands (0 MiB/s), PCIeRdCur: 12007684
+180420 blocks/s (704 MiB/s) via 5820 commands (0 MiB/s), PCIeRdCur: 11954286
+179180 blocks/s (699 MiB/s) via 5780 commands (0 MiB/s), PCIeRdCur: 11874160
+179924 blocks/s (702 MiB/s) via 5804 commands (0 MiB/s), PCIeRdCur: 11920862
+179087 blocks/s (699 MiB/s) via 5777 commands (0 MiB/s), PCIeRdCur: 11865380
+182497 blocks/s (712 MiB/s) via 5887 commands (0 MiB/s), PCIeRdCur: 12091954
+178374 blocks/s (696 MiB/s) via 5754 commands (0 MiB/s), PCIeRdCur: 11820762
+106578 blocks/s (416 MiB/s) via 3438 commands (0 MiB/s), PCIeRdCur: 7059607
+
+Command limit of 50000 reached, exiting…
+
+
+PCIeRdCur: 102700978 over 9.00s (11409285 per second)
+→ PCIeRdCur-misses with random-read
+Number of physical cores: 16
+Number of logical cores: 16
+Number of online logical cores: 16
+Threads (logical cores) per physical core: 1
+Num sockets: 2
+Physical cores per socket: 8
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 8
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 2400000000 Hz
+Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
+ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
+Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
+SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
+SSD size: 97677846 blocks (372 GiB)
+Block size: 4096 B
+Max block count: 32 blocks per command
+Caching mode: once
+Global command limit: 50000 commands
+Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
+Memory buffer size: 1000 blocks (3 MiB)
+Pattern loaded: Accesses random disk blocks in large chunks.
+
+181815 blocks/s (710 MiB/s) via 5865 commands (0 MiB/s), PCIeRdCur: 17130
+182187 blocks/s (711 MiB/s) via 5877 commands (0 MiB/s), PCIeRdCur: 21655
+179986 blocks/s (703 MiB/s) via 5806 commands (0 MiB/s), PCIeRdCur: 21855
+179645 blocks/s (701 MiB/s) via 5795 commands (0 MiB/s), PCIeRdCur: 24185
+181133 blocks/s (707 MiB/s) via 5843 commands (0 MiB/s), PCIeRdCur: 25269
+179459 blocks/s (701 MiB/s) via 5789 commands (0 MiB/s), PCIeRdCur: 26087
+180730 blocks/s (705 MiB/s) via 5830 commands (0 MiB/s), PCIeRdCur: 43974
+182900 blocks/s (714 MiB/s) via 5900 commands (0 MiB/s), PCIeRdCur: 55540
+102145 blocks/s (399 MiB/s) via 3295 commands (0 MiB/s), PCIeRdCur: 32073
+
+Command limit of 50000 reached, exiting…
+
+
+PCIeRdCur: 267768 over 9.00s (29747 per second)
 Success formatting namespace:1
 → ItoM-hits-filtered with single-write
 Number of physical cores: 16
@@ -342,18 +664,18 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-77233 blocks/s (301 MiB/s) via 77233 commands (5 MiB/s), ItoM: 9886721
-78994 blocks/s (308 MiB/s) via 78994 commands (6 MiB/s), ItoM: 10110765
-81208 blocks/s (317 MiB/s) via 81208 commands (6 MiB/s), ItoM: 10394720
-81576 blocks/s (318 MiB/s) via 81576 commands (6 MiB/s), ItoM: 10441642
-80795 blocks/s (315 MiB/s) via 80795 commands (6 MiB/s), ItoM: 10341632
-84169 blocks/s (328 MiB/s) via 84169 commands (6 MiB/s), ItoM: 10773710
-16025 blocks/s (62 MiB/s) via 16025 commands (1 MiB/s), ItoM: 2050817
+82119 blocks/s (320 MiB/s) via 82119 commands (6 MiB/s), ItoM: 10512120
+83709 blocks/s (326 MiB/s) via 83709 commands (6 MiB/s), ItoM: 10714323
+73182 blocks/s (285 MiB/s) via 73182 commands (5 MiB/s), ItoM: 9367274
+83211 blocks/s (325 MiB/s) via 83211 commands (6 MiB/s), ItoM: 10650992
+81858 blocks/s (319 MiB/s) via 81858 commands (6 MiB/s), ItoM: 10477726
+79959 blocks/s (312 MiB/s) via 79959 commands (6 MiB/s), ItoM: 10234732
+15962 blocks/s (62 MiB/s) via 15962 commands (1 MiB/s), ItoM: 2042833
 
 Command limit of 500000 reached, exiting…
 
 
-ItoM: 64000007 over 7.00s (9140781 per second)
+ItoM: 64000000 over 7.00s (9141176 per second)
 → ItoM-misses-filtered with single-write
 Number of physical cores: 16
 Number of logical cores: 16
@@ -381,18 +703,18 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-74524 blocks/s (291 MiB/s) via 74524 commands (5 MiB/s), ItoM: 1093
-79171 blocks/s (309 MiB/s) via 79171 commands (6 MiB/s), ItoM: 1341
-74576 blocks/s (291 MiB/s) via 74576 commands (5 MiB/s), ItoM: 1437
-83448 blocks/s (325 MiB/s) via 83448 commands (6 MiB/s), ItoM: 3173720
-83340 blocks/s (325 MiB/s) via 83340 commands (6 MiB/s), ItoM: 5333717
-84260 blocks/s (329 MiB/s) via 84260 commands (6 MiB/s), ItoM: 5392596
-20681 blocks/s (80 MiB/s) via 20681 commands (1 MiB/s), ItoM: 1323438
+75756 blocks/s (295 MiB/s) via 75756 commands (5 MiB/s), ItoM: 1205
+80272 blocks/s (313 MiB/s) via 80272 commands (6 MiB/s), ItoM: 1492
+81740 blocks/s (319 MiB/s) via 81740 commands (6 MiB/s), ItoM: 1407
+79343 blocks/s (309 MiB/s) via 79343 commands (6 MiB/s), ItoM: 3518797
+81490 blocks/s (318 MiB/s) via 81490 commands (6 MiB/s), ItoM: 5215321
+81802 blocks/s (319 MiB/s) via 81802 commands (6 MiB/s), ItoM: 5235252
+19597 blocks/s (76 MiB/s) via 19597 commands (1 MiB/s), ItoM: 1254113
 
 Command limit of 500000 reached, exiting…
 
 
-ItoM: 15227342 over 7.00s (2174902 per second)
+ItoM: 15227587 over 7.00s (2174968 per second)
 Success formatting namespace:1
 → ItoM-hits-filtered with random-write
 Number of physical cores: 16
@@ -421,18 +743,18 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-392305 blocks/s (1532 MiB/s) via 12655 commands (0 MiB/s), ItoM: 25920702
-525636 blocks/s (2053 MiB/s) via 16956 commands (1 MiB/s), ItoM: 34725036
-528023 blocks/s (2062 MiB/s) via 17033 commands (1 MiB/s), ItoM: 34883198
-527682 blocks/s (2061 MiB/s) via 17022 commands (1 MiB/s), ItoM: 34861294
-528240 blocks/s (2063 MiB/s) via 17040 commands (1 MiB/s), ItoM: 34897773
-526876 blocks/s (2058 MiB/s) via 16996 commands (1 MiB/s), ItoM: 34807617
-71238 blocks/s (278 MiB/s) via 2298 commands (0 MiB/s), ItoM: 4704417
+393080 blocks/s (1535 MiB/s) via 12680 commands (0 MiB/s), ItoM: 25972736
+528395 blocks/s (2064 MiB/s) via 17045 commands (1 MiB/s), ItoM: 34906112
+528829 blocks/s (2065 MiB/s) via 17059 commands (1 MiB/s), ItoM: 34936000
+528116 blocks/s (2062 MiB/s) via 17036 commands (1 MiB/s), ItoM: 34890560
+527744 blocks/s (2061 MiB/s) via 17024 commands (1 MiB/s), ItoM: 34864279
+533231 blocks/s (2082 MiB/s) via 17201 commands (1 MiB/s), ItoM: 35228188
+60605 blocks/s (236 MiB/s) via 1955 commands (0 MiB/s), ItoM: 4002131
 
 Command limit of 100000 reached, exiting…
 
 
-ItoM: 204800037 over 7.00s (29251884 per second)
+ItoM: 204800006 over 7.00s (29251399 per second)
 → ItoM-misses-filtered with random-write
 Number of physical cores: 16
 Number of logical cores: 16
@@ -460,18 +782,18 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-394816 blocks/s (1542 MiB/s) via 12736 commands (0 MiB/s), ItoM: 24728835
-523776 blocks/s (2046 MiB/s) via 16896 commands (1 MiB/s), ItoM: 34379756
-524861 blocks/s (2050 MiB/s) via 16931 commands (1 MiB/s), ItoM: 34511559
-526380 blocks/s (2056 MiB/s) via 16980 commands (1 MiB/s), ItoM: 34645996
-530596 blocks/s (2072 MiB/s) via 17116 commands (1 MiB/s), ItoM: 34938428
-528240 blocks/s (2063 MiB/s) via 17040 commands (1 MiB/s), ItoM: 34803129
-71331 blocks/s (278 MiB/s) via 2301 commands (0 MiB/s), ItoM: 4699308
+392243 blocks/s (1532 MiB/s) via 12653 commands (0 MiB/s), ItoM: 24591404
+526535 blocks/s (2056 MiB/s) via 16985 commands (1 MiB/s), ItoM: 34560755
+527775 blocks/s (2061 MiB/s) via 17025 commands (1 MiB/s), ItoM: 34684832
+527093 blocks/s (2058 MiB/s) via 17003 commands (1 MiB/s), ItoM: 34678204
+527713 blocks/s (2061 MiB/s) via 17023 commands (1 MiB/s), ItoM: 34726064
+528674 blocks/s (2065 MiB/s) via 17054 commands (1 MiB/s), ItoM: 34810213
+69967 blocks/s (273 MiB/s) via 2257 commands (0 MiB/s), ItoM: 4604732
 
 Command limit of 100000 reached, exiting…
 
 
-ItoM: 202707011 over 7.00s (28952585 per second)
+ItoM: 202656204 over 7.00s (28945283 per second)
 Success formatting namespace:1
 → PCIeRdCur-hits with single-read
 Number of physical cores: 16
@@ -500,17 +822,17 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-43898 blocks/s (171 MiB/s) via 43898 commands (3 MiB/s), PCIeRdCur: 5707555
-44882 blocks/s (175 MiB/s) via 44882 commands (3 MiB/s), PCIeRdCur: 5834077
-42984 blocks/s (167 MiB/s) via 42984 commands (3 MiB/s), PCIeRdCur: 5587757
-42691 blocks/s (166 MiB/s) via 42691 commands (3 MiB/s), PCIeRdCur: 5549857
-44276 blocks/s (172 MiB/s) via 44276 commands (3 MiB/s), PCIeRdCur: 5756314
-31269 blocks/s (122 MiB/s) via 31269 commands (2 MiB/s), PCIeRdCur: 4064941
+44773 blocks/s (174 MiB/s) via 44773 commands (3 MiB/s), PCIeRdCur: 5821307
+44813 blocks/s (175 MiB/s) via 44813 commands (3 MiB/s), PCIeRdCur: 5825399
+44045 blocks/s (172 MiB/s) via 44045 commands (3 MiB/s), PCIeRdCur: 5725756
+44095 blocks/s (172 MiB/s) via 44095 commands (3 MiB/s), PCIeRdCur: 5732129
+43270 blocks/s (169 MiB/s) via 43270 commands (3 MiB/s), PCIeRdCur: 5625112
+29004 blocks/s (113 MiB/s) via 29004 commands (2 MiB/s), PCIeRdCur: 3771009
 
 Command limit of 250000 reached, exiting…
 
 
-PCIeRdCur: 32500501 over 6.00s (5415605 per second)
+PCIeRdCur: 32500712 over 6.00s (5415548 per second)
 → PCIeRdCur-misses with single-read
 Number of physical cores: 16
 Number of logical cores: 16
@@ -538,17 +860,17 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-45187 blocks/s (176 MiB/s) via 45187 commands (3 MiB/s), PCIeRdCur: 310
-43695 blocks/s (170 MiB/s) via 43695 commands (3 MiB/s), PCIeRdCur: 32
-46250 blocks/s (180 MiB/s) via 46250 commands (3 MiB/s), PCIeRdCur: 39
-43508 blocks/s (169 MiB/s) via 43508 commands (3 MiB/s), PCIeRdCur: 7
-42748 blocks/s (166 MiB/s) via 42748 commands (3 MiB/s), PCIeRdCur: 145
-28612 blocks/s (111 MiB/s) via 28612 commands (2 MiB/s), PCIeRdCur: 10
+43862 blocks/s (171 MiB/s) via 43862 commands (3 MiB/s), PCIeRdCur: 80
+43122 blocks/s (168 MiB/s) via 43122 commands (3 MiB/s), PCIeRdCur: 20
+44624 blocks/s (174 MiB/s) via 44624 commands (3 MiB/s), PCIeRdCur: 31
+45529 blocks/s (177 MiB/s) via 45529 commands (3 MiB/s), PCIeRdCur: 20
+44546 blocks/s (174 MiB/s) via 44546 commands (3 MiB/s), PCIeRdCur: 16
+28317 blocks/s (110 MiB/s) via 28317 commands (2 MiB/s), PCIeRdCur: 139
 
 Command limit of 250000 reached, exiting…
 
 
-PCIeRdCur: 543 over 6.00s (90 per second)
+PCIeRdCur: 306 over 6.00s (51 per second)
 Success formatting namespace:1
 → PCIeRdCur-hits with random-read
 Number of physical cores: 16
@@ -577,21 +899,21 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-103850 blocks/s (405 MiB/s) via 3350 commands (0 MiB/s), PCIeRdCur: 6882977
-176948 blocks/s (691 MiB/s) via 5708 commands (0 MiB/s), PCIeRdCur: 11722387
-176731 blocks/s (690 MiB/s) via 5701 commands (0 MiB/s), PCIeRdCur: 11709869
-180668 blocks/s (705 MiB/s) via 5828 commands (0 MiB/s), PCIeRdCur: 11970719
-177537 blocks/s (693 MiB/s) via 5727 commands (0 MiB/s), PCIeRdCur: 11763272
-177165 blocks/s (692 MiB/s) via 5715 commands (0 MiB/s), PCIeRdCur: 11739088
-179180 blocks/s (699 MiB/s) via 5780 commands (0 MiB/s), PCIeRdCur: 11874387
-177289 blocks/s (692 MiB/s) via 5719 commands (0 MiB/s), PCIeRdCur: 11746833
-176669 blocks/s (690 MiB/s) via 5699 commands (0 MiB/s), PCIeRdCur: 11705765
-23963 blocks/s (93 MiB/s) via 773 commands (0 MiB/s), PCIeRdCur: 1585690
+107136 blocks/s (418 MiB/s) via 3456 commands (0 MiB/s), PCIeRdCur: 7100689
+176173 blocks/s (688 MiB/s) via 5683 commands (0 MiB/s), PCIeRdCur: 11670832
+176483 blocks/s (689 MiB/s) via 5693 commands (0 MiB/s), PCIeRdCur: 11693428
+180606 blocks/s (705 MiB/s) via 5826 commands (0 MiB/s), PCIeRdCur: 11966604
+178467 blocks/s (697 MiB/s) via 5757 commands (0 MiB/s), PCIeRdCur: 11824884
+178095 blocks/s (695 MiB/s) via 5745 commands (0 MiB/s), PCIeRdCur: 11800569
+174437 blocks/s (681 MiB/s) via 5627 commands (0 MiB/s), PCIeRdCur: 11557863
+178653 blocks/s (697 MiB/s) via 5763 commands (0 MiB/s), PCIeRdCur: 11837206
+175863 blocks/s (686 MiB/s) via 5673 commands (0 MiB/s), PCIeRdCur: 11654009
+24087 blocks/s (94 MiB/s) via 777 commands (0 MiB/s), PCIeRdCur: 1594295
 
 Command limit of 50000 reached, exiting…
 
 
-PCIeRdCur: 102700987 over 10.00s (10268106 per second)
+PCIeRdCur: 102700379 over 10.00s (10268351 per second)
 → PCIeRdCur-misses with random-read
 Number of physical cores: 16
 Number of logical cores: 16
@@ -619,349 +941,21 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-112716 blocks/s (440 MiB/s) via 3636 commands (0 MiB/s), PCIeRdCur: 6316662
-177289 blocks/s (692 MiB/s) via 5719 commands (0 MiB/s), PCIeRdCur: 11594188
-175925 blocks/s (687 MiB/s) via 5675 commands (0 MiB/s), PCIeRdCur: 11565655
-177909 blocks/s (694 MiB/s) via 5739 commands (0 MiB/s), PCIeRdCur: 11725682
-180172 blocks/s (703 MiB/s) via 5812 commands (0 MiB/s), PCIeRdCur: 11890161
-179149 blocks/s (699 MiB/s) via 5779 commands (0 MiB/s), PCIeRdCur: 11825092
-178560 blocks/s (697 MiB/s) via 5760 commands (0 MiB/s), PCIeRdCur: 11790988
-177692 blocks/s (694 MiB/s) via 5732 commands (0 MiB/s), PCIeRdCur: 11738165
-178591 blocks/s (697 MiB/s) via 5761 commands (0 MiB/s), PCIeRdCur: 11792731
-11997 blocks/s (46 MiB/s) via 387 commands (0 MiB/s), PCIeRdCur: 792677
+109647 blocks/s (428 MiB/s) via 3537 commands (0 MiB/s), PCIeRdCur: 6133145
+177041 blocks/s (691 MiB/s) via 5711 commands (0 MiB/s), PCIeRdCur: 11584949
+177289 blocks/s (692 MiB/s) via 5719 commands (0 MiB/s), PCIeRdCur: 11665395
+176421 blocks/s (689 MiB/s) via 5691 commands (0 MiB/s), PCIeRdCur: 11631509
+177940 blocks/s (695 MiB/s) via 5740 commands (0 MiB/s), PCIeRdCur: 11737631
+180296 blocks/s (704 MiB/s) via 5816 commands (0 MiB/s), PCIeRdCur: 11898222
+178374 blocks/s (696 MiB/s) via 5754 commands (0 MiB/s), PCIeRdCur: 11770755
+177568 blocks/s (693 MiB/s) via 5728 commands (0 MiB/s), PCIeRdCur: 11716467
+177010 blocks/s (691 MiB/s) via 5710 commands (0 MiB/s), PCIeRdCur: 11683983
+18414 blocks/s (71 MiB/s) via 594 commands (0 MiB/s), PCIeRdCur: 1212904
 
 Command limit of 50000 reached, exiting…
 
 
-PCIeRdCur: 101032001 over 10.00s (10101320 per second)
-Success formatting namespace:1
-→ ItoM-hits-filtered with single-write
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 500000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Sequentially access a single block.
-
-75490 blocks/s (294 MiB/s) via 75490 commands (5 MiB/s), ItoM: 9664632
-78048 blocks/s (304 MiB/s) via 78048 commands (5 MiB/s), ItoM: 9988613
-77360 blocks/s (302 MiB/s) via 77360 commands (5 MiB/s), ItoM: 9902082
-80344 blocks/s (313 MiB/s) via 80344 commands (6 MiB/s), ItoM: 10283976
-82291 blocks/s (321 MiB/s) via 82292 commands (6 MiB/s), ItoM: 10533243
-81215 blocks/s (317 MiB/s) via 81215 commands (6 MiB/s), ItoM: 10395635
-25251 blocks/s (98 MiB/s) via 25251 commands (1 MiB/s), ItoM: 3231826
-
-Command limit of 500000 reached, exiting…
-
-
-ItoM: 64000007 over 7.00s (9141044 per second)
-→ ItoM-misses-filtered with single-write
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 500000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Sequentially access a single block.
-
-79030 blocks/s (308 MiB/s) via 79030 commands (6 MiB/s), ItoM: 1124
-76530 blocks/s (298 MiB/s) via 76530 commands (5 MiB/s), ItoM: 1453
-73908 blocks/s (288 MiB/s) via 73908 commands (5 MiB/s), ItoM: 1500
-82037 blocks/s (320 MiB/s) via 82037 commands (6 MiB/s), ItoM: 3160342
-82517 blocks/s (322 MiB/s) via 82517 commands (6 MiB/s), ItoM: 5280961
-84461 blocks/s (329 MiB/s) via 84461 commands (6 MiB/s), ItoM: 5405530
-21517 blocks/s (84 MiB/s) via 21517 commands (1 MiB/s), ItoM: 1376936
-
-Command limit of 500000 reached, exiting…
-
-
-ItoM: 15227846 over 7.00s (2174931 per second)
-Success formatting namespace:1
-→ ItoM-hits-filtered with random-write
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 100000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Accesses random disk blocks in large chunks.
-
-399807 blocks/s (1561 MiB/s) via 12897 commands (0 MiB/s), ItoM: 26416292
-531247 blocks/s (2075 MiB/s) via 17137 commands (1 MiB/s), ItoM: 35095390
-526008 blocks/s (2054 MiB/s) via 16968 commands (1 MiB/s), ItoM: 34750391
-525450 blocks/s (2052 MiB/s) via 16950 commands (1 MiB/s), ItoM: 34713683
-523590 blocks/s (2045 MiB/s) via 16890 commands (1 MiB/s), ItoM: 34591738
-526659 blocks/s (2057 MiB/s) via 16989 commands (1 MiB/s), ItoM: 34792461
-67239 blocks/s (262 MiB/s) via 2169 commands (0 MiB/s), ItoM: 4440065
-
-Command limit of 100000 reached, exiting…
-
-
-ItoM: 204800020 over 7.00s (29251387 per second)
-→ ItoM-misses-filtered with random-write
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 100000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Accesses random disk blocks in large chunks.
-
-378231 blocks/s (1477 MiB/s) via 12201 commands (0 MiB/s), ItoM: 23705155
-526783 blocks/s (2057 MiB/s) via 16993 commands (1 MiB/s), ItoM: 34561748
-526132 blocks/s (2055 MiB/s) via 16972 commands (1 MiB/s), ItoM: 34604905
-524861 blocks/s (2050 MiB/s) via 16931 commands (1 MiB/s), ItoM: 34532675
-529201 blocks/s (2067 MiB/s) via 17071 commands (1 MiB/s), ItoM: 34846724
-527496 blocks/s (2060 MiB/s) via 17016 commands (1 MiB/s), ItoM: 34719999
-87296 blocks/s (341 MiB/s) via 2816 commands (0 MiB/s), ItoM: 5744531
-
-Command limit of 100000 reached, exiting…
-
-
-ItoM: 202715737 over 7.00s (28953484 per second)
-Success formatting namespace:1
-→ PCIeRdCur-hits with single-read
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 250000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Sequentially access a single block.
-
-45541 blocks/s (177 MiB/s) via 45541 commands (3 MiB/s), PCIeRdCur: 5922080
-45093 blocks/s (176 MiB/s) via 45093 commands (3 MiB/s), PCIeRdCur: 5861029
-42917 blocks/s (167 MiB/s) via 42917 commands (3 MiB/s), PCIeRdCur: 5579226
-44527 blocks/s (173 MiB/s) via 44527 commands (3 MiB/s), PCIeRdCur: 5788600
-43968 blocks/s (171 MiB/s) via 43968 commands (3 MiB/s), PCIeRdCur: 5716362
-27954 blocks/s (109 MiB/s) via 27954 commands (2 MiB/s), PCIeRdCur: 3633664
-
-Command limit of 250000 reached, exiting…
-
-
-PCIeRdCur: 32500961 over 6.00s (5415686 per second)
-→ PCIeRdCur-misses with single-read
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 250000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Sequentially access a single block.
-
-43931 blocks/s (171 MiB/s) via 43931 commands (3 MiB/s), PCIeRdCur: 30
-44673 blocks/s (174 MiB/s) via 44673 commands (3 MiB/s), PCIeRdCur: 23
-43715 blocks/s (170 MiB/s) via 43715 commands (3 MiB/s), PCIeRdCur: 33
-43858 blocks/s (171 MiB/s) via 43858 commands (3 MiB/s), PCIeRdCur: 24
-43725 blocks/s (170 MiB/s) via 43725 commands (3 MiB/s), PCIeRdCur: 17
-30098 blocks/s (117 MiB/s) via 30098 commands (2 MiB/s), PCIeRdCur: 461
-
-Command limit of 250000 reached, exiting…
-
-
-PCIeRdCur: 588 over 6.00s (98 per second)
-Success formatting namespace:1
-→ PCIeRdCur-hits with random-read
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 50000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Accesses random disk blocks in large chunks.
-
-107477 blocks/s (419 MiB/s) via 3467 commands (0 MiB/s), PCIeRdCur: 7125326
-177134 blocks/s (691 MiB/s) via 5714 commands (0 MiB/s), PCIeRdCur: 11733125
-177971 blocks/s (695 MiB/s) via 5741 commands (0 MiB/s), PCIeRdCur: 11792021
-179676 blocks/s (701 MiB/s) via 5796 commands (0 MiB/s), PCIeRdCur: 11905066
-178591 blocks/s (697 MiB/s) via 5761 commands (0 MiB/s), PCIeRdCur: 11833101
-177537 blocks/s (693 MiB/s) via 5727 commands (0 MiB/s), PCIeRdCur: 11763271
-176328 blocks/s (688 MiB/s) via 5688 commands (0 MiB/s), PCIeRdCur: 11684227
-177940 blocks/s (695 MiB/s) via 5740 commands (0 MiB/s), PCIeRdCur: 11789183
-177196 blocks/s (692 MiB/s) via 5716 commands (0 MiB/s), PCIeRdCur: 11742719
-20150 blocks/s (78 MiB/s) via 650 commands (0 MiB/s), PCIeRdCur: 1333060
-
-Command limit of 50000 reached, exiting…
-
-
-PCIeRdCur: 102701099 over 10.00s (10268258 per second)
-→ PCIeRdCur-misses with random-read
-Number of physical cores: 16
-Number of logical cores: 16
-Number of online logical cores: 16
-Threads (logical cores) per physical core: 1
-Num sockets: 2
-Physical cores per socket: 8
-Core PMU (perfmon) version: 3
-Number of core PMU generic (programmable) counters: 8
-Width of generic (programmable) counters: 48 bits
-Number of core PMU fixed counters: 3
-Width of fixed counters: 48 bits
-Nominal core frequency: 2400000000 Hz
-Package thermal spec power: 85 Watt; Package minimum power: 38 Watt; Package maximum power: 170 Watt; 
-ERROR: QPI LL monitoring device (0:127:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 0: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-ERROR: QPI LL monitoring device (0:255:9:2) is missing. The QPI statistics will be incomplete or missing.
-Socket 1: 2 memory controllers detected with total number of 5 channels. 1 QPI ports detected.
-SSD: INTEL SSDPEDMW400G4                      (CVCQ51520089400AGN  )
-SSD size: 97677846 blocks (372 GiB)
-Block size: 4096 B
-Max block count: 32 blocks per command
-Caching mode: once
-Global command limit: 50000 commands
-Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
-Memory buffer size: 262144 blocks (1024 MiB)
-Pattern loaded: Accesses random disk blocks in large chunks.
-
-104501 blocks/s (408 MiB/s) via 3371 commands (0 MiB/s), PCIeRdCur: 5819792
-175460 blocks/s (685 MiB/s) via 5660 commands (0 MiB/s), PCIeRdCur: 11479840
-176979 blocks/s (691 MiB/s) via 5709 commands (0 MiB/s), PCIeRdCur: 11658977
-176917 blocks/s (691 MiB/s) via 5707 commands (0 MiB/s), PCIeRdCur: 11668157
-178870 blocks/s (698 MiB/s) via 5770 commands (0 MiB/s), PCIeRdCur: 11798433
-180265 blocks/s (704 MiB/s) via 5815 commands (0 MiB/s), PCIeRdCur: 11899199
-178033 blocks/s (695 MiB/s) via 5743 commands (0 MiB/s), PCIeRdCur: 11754282
-177289 blocks/s (692 MiB/s) via 5719 commands (0 MiB/s), PCIeRdCur: 11713311
-178002 blocks/s (695 MiB/s) via 5742 commands (0 MiB/s), PCIeRdCur: 11754274
-23684 blocks/s (92 MiB/s) via 764 commands (0 MiB/s), PCIeRdCur: 1562999
-
-Command limit of 50000 reached, exiting…
-
-
-PCIeRdCur: 101109264 over 10.00s (10108836 per second)
+PCIeRdCur: 101034960 over 10.00s (10101772 per second)
 Success formatting namespace:1
 → ItoM-hits-filtered with single-write
 Number of physical cores: 16
@@ -991,19 +985,19 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-66483 blocks/s (259 MiB/s) via 66483 commands (5 MiB/s), ItoM: 8510498
-64853 blocks/s (253 MiB/s) via 64853 commands (4 MiB/s), ItoM: 8300946
-65162 blocks/s (254 MiB/s) via 65162 commands (4 MiB/s), ItoM: 8340304
-65946 blocks/s (257 MiB/s) via 65946 commands (5 MiB/s), ItoM: 8441344
-68461 blocks/s (267 MiB/s) via 68461 commands (5 MiB/s), ItoM: 8763011
-70651 blocks/s (275 MiB/s) via 70651 commands (5 MiB/s), ItoM: 9043329
-69344 blocks/s (270 MiB/s) via 69344 commands (5 MiB/s), ItoM: 8876157
-29099 blocks/s (113 MiB/s) via 29099 commands (2 MiB/s), ItoM: 3724433
+65369 blocks/s (255 MiB/s) via 65369 commands (4 MiB/s), ItoM: 8367878
+64205 blocks/s (250 MiB/s) via 64205 commands (4 MiB/s), ItoM: 8217984
+65352 blocks/s (255 MiB/s) via 65352 commands (4 MiB/s), ItoM: 8364928
+67784 blocks/s (264 MiB/s) via 67784 commands (5 MiB/s), ItoM: 8676306
+67675 blocks/s (264 MiB/s) via 67675 commands (5 MiB/s), ItoM: 8662571
+69551 blocks/s (271 MiB/s) via 69551 commands (5 MiB/s), ItoM: 8902423
+66297 blocks/s (258 MiB/s) via 66297 commands (5 MiB/s), ItoM: 8485996
+33767 blocks/s (131 MiB/s) via 33767 commands (2 MiB/s), ItoM: 4321920
 
 Command limit of 500000 reached, exiting…
 
 
-ItoM: 64000022 over 8.00s (7998562 per second)
+ItoM: 64000006 over 8.00s (7998351 per second)
 → ItoM-misses-filtered with single-write
 Number of physical cores: 16
 Number of logical cores: 16
@@ -1032,19 +1026,19 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-67032 blocks/s (261 MiB/s) via 67032 commands (5 MiB/s), ItoM: 986
-67889 blocks/s (265 MiB/s) via 67889 commands (5 MiB/s), ItoM: 1025
-65479 blocks/s (255 MiB/s) via 65479 commands (4 MiB/s), ItoM: 720
-67443 blocks/s (263 MiB/s) via 67443 commands (5 MiB/s), ItoM: 298391
-65716 blocks/s (256 MiB/s) via 65716 commands (5 MiB/s), ItoM: 3429203
-73320 blocks/s (286 MiB/s) via 73320 commands (5 MiB/s), ItoM: 3827394
-65156 blocks/s (254 MiB/s) via 65156 commands (4 MiB/s), ItoM: 3401536
-27965 blocks/s (109 MiB/s) via 27965 commands (2 MiB/s), ItoM: 1460480
+71003 blocks/s (277 MiB/s) via 71003 commands (5 MiB/s), ItoM: 890
+64120 blocks/s (250 MiB/s) via 64120 commands (4 MiB/s), ItoM: 905
+60697 blocks/s (237 MiB/s) via 60697 commands (4 MiB/s), ItoM: 1013
+67396 blocks/s (263 MiB/s) via 67396 commands (5 MiB/s), ItoM: 56985
+69494 blocks/s (271 MiB/s) via 69494 commands (5 MiB/s), ItoM: 3624662
+70497 blocks/s (275 MiB/s) via 70497 commands (5 MiB/s), ItoM: 3677933
+69242 blocks/s (270 MiB/s) via 69242 commands (5 MiB/s), ItoM: 3611922
+27551 blocks/s (107 MiB/s) via 27551 commands (2 MiB/s), ItoM: 1436492
 
 Command limit of 500000 reached, exiting…
 
 
-ItoM: 12419735 over 8.00s (1552138 per second)
+ItoM: 12410802 over 8.00s (1551046 per second)
 Success formatting namespace:1
 → ItoM-hits-filtered with random-write
 Number of physical cores: 16
@@ -1074,27 +1068,26 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-157108 blocks/s (613 MiB/s) via 5068 commands (0 MiB/s), ItoM: 10381313
-203949 blocks/s (796 MiB/s) via 6579 commands (0 MiB/s), ItoM: 13471745
-213652 blocks/s (834 MiB/s) via 6892 commands (0 MiB/s), ItoM: 14116823
-205902 blocks/s (804 MiB/s) via 6642 commands (0 MiB/s), ItoM: 13600811
-195052 blocks/s (761 MiB/s) via 6292 commands (0 MiB/s), ItoM: 12886397
-215729 blocks/s (842 MiB/s) via 6959 commands (0 MiB/s), ItoM: 14253135
-216008 blocks/s (843 MiB/s) via 6968 commands (0 MiB/s), ItoM: 14271031
-204755 blocks/s (799 MiB/s) via 6605 commands (0 MiB/s), ItoM: 13524993
-217341 blocks/s (848 MiB/s) via 7011 commands (0 MiB/s), ItoM: 14358529
-207824 blocks/s (811 MiB/s) via 6704 commands (0 MiB/s), ItoM: 13731483
-206026 blocks/s (804 MiB/s) via 6646 commands (0 MiB/s), ItoM: 13611367
-216969 blocks/s (847 MiB/s) via 6999 commands (0 MiB/s), ItoM: 14333953
-207421 blocks/s (810 MiB/s) via 6691 commands (0 MiB/s), ItoM: 13701121
-193409 blocks/s (755 MiB/s) via 6239 commands (0 MiB/s), ItoM: 12777473
-212567 blocks/s (830 MiB/s) via 6857 commands (0 MiB/s), ItoM: 14044937
-26288 blocks/s (102 MiB/s) via 848 commands (0 MiB/s), ItoM: 1734905
+153078 blocks/s (597 MiB/s) via 4938 commands (0 MiB/s), ItoM: 10115072
+218302 blocks/s (852 MiB/s) via 7042 commands (0 MiB/s), ItoM: 14422016
+218705 blocks/s (854 MiB/s) via 7055 commands (0 MiB/s), ItoM: 14448640
+208165 blocks/s (813 MiB/s) via 6715 commands (0 MiB/s), ItoM: 13750272
+217558 blocks/s (849 MiB/s) via 7018 commands (0 MiB/s), ItoM: 14374912
+218705 blocks/s (854 MiB/s) via 7055 commands (0 MiB/s), ItoM: 14448640
+218581 blocks/s (853 MiB/s) via 7051 commands (0 MiB/s), ItoM: 14438400
+218333 blocks/s (852 MiB/s) via 7043 commands (0 MiB/s), ItoM: 14424064
+208413 blocks/s (814 MiB/s) via 6723 commands (0 MiB/s), ItoM: 13769464
+217589 blocks/s (849 MiB/s) via 7019 commands (0 MiB/s), ItoM: 14376206
+218085 blocks/s (851 MiB/s) via 7035 commands (0 MiB/s), ItoM: 14405632
+219511 blocks/s (857 MiB/s) via 7081 commands (0 MiB/s), ItoM: 14501894
+209901 blocks/s (819 MiB/s) via 6771 commands (0 MiB/s), ItoM: 13867607
+217620 blocks/s (850 MiB/s) via 7020 commands (0 MiB/s), ItoM: 14376373
+137454 blocks/s (536 MiB/s) via 4434 commands (0 MiB/s), ItoM: 9080838
 
 Command limit of 100000 reached, exiting…
 
 
-ItoM: 204800016 over 16.00s (12797394 per second)
+ItoM: 204800030 over 15.00s (13650358 per second)
 → ItoM-misses-filtered with random-write
 Number of physical cores: 16
 Number of logical cores: 16
@@ -1123,27 +1116,27 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-157945 blocks/s (616 MiB/s) via 5095 commands (0 MiB/s), ItoM: 275171
-216938 blocks/s (847 MiB/s) via 6998 commands (0 MiB/s), ItoM: 417533
-216194 blocks/s (844 MiB/s) via 6974 commands (0 MiB/s), ItoM: 417441
-210118 blocks/s (820 MiB/s) via 6778 commands (0 MiB/s), ItoM: 404931
-214489 blocks/s (837 MiB/s) via 6919 commands (0 MiB/s), ItoM: 414503
-170376 blocks/s (665 MiB/s) via 5496 commands (0 MiB/s), ItoM: 328416
-216969 blocks/s (847 MiB/s) via 6999 commands (0 MiB/s), ItoM: 417992
-201562 blocks/s (787 MiB/s) via 6502 commands (0 MiB/s), ItoM: 388757
-211792 blocks/s (827 MiB/s) via 6832 commands (0 MiB/s), ItoM: 407725
-214303 blocks/s (837 MiB/s) via 6913 commands (0 MiB/s), ItoM: 414080
-188418 blocks/s (736 MiB/s) via 6078 commands (0 MiB/s), ItoM: 362396
-215109 blocks/s (840 MiB/s) via 6939 commands (0 MiB/s), ItoM: 414678
-217310 blocks/s (848 MiB/s) via 7010 commands (0 MiB/s), ItoM: 419473
-217899 blocks/s (851 MiB/s) via 7029 commands (0 MiB/s), ItoM: 420717
-217248 blocks/s (848 MiB/s) via 7008 commands (0 MiB/s), ItoM: 419500
-13330 blocks/s (52 MiB/s) via 430 commands (0 MiB/s), ItoM: 25686
+158627 blocks/s (619 MiB/s) via 5117 commands (0 MiB/s), ItoM: 276828
+216628 blocks/s (846 MiB/s) via 6988 commands (0 MiB/s), ItoM: 417389
+180761 blocks/s (706 MiB/s) via 5831 commands (0 MiB/s), ItoM: 346934
+215295 blocks/s (840 MiB/s) via 6945 commands (0 MiB/s), ItoM: 415835
+197656 blocks/s (772 MiB/s) via 6376 commands (0 MiB/s), ItoM: 380975
+217155 blocks/s (848 MiB/s) via 7005 commands (0 MiB/s), ItoM: 418638
+217682 blocks/s (850 MiB/s) via 7022 commands (0 MiB/s), ItoM: 419013
+216907 blocks/s (847 MiB/s) via 6997 commands (0 MiB/s), ItoM: 418307
+171926 blocks/s (671 MiB/s) via 5546 commands (0 MiB/s), ItoM: 330843
+210676 blocks/s (822 MiB/s) via 6796 commands (0 MiB/s), ItoM: 407004
+218147 blocks/s (852 MiB/s) via 7037 commands (0 MiB/s), ItoM: 420429
+206987 blocks/s (808 MiB/s) via 6677 commands (0 MiB/s), ItoM: 399145
+217372 blocks/s (849 MiB/s) via 7012 commands (0 MiB/s), ItoM: 419574
+217806 blocks/s (850 MiB/s) via 7026 commands (0 MiB/s), ItoM: 419790
+208537 blocks/s (814 MiB/s) via 6727 commands (0 MiB/s), ItoM: 402235
+27838 blocks/s (108 MiB/s) via 898 commands (0 MiB/s), ItoM: 53998
 
 Command limit of 100000 reached, exiting…
 
 
-ItoM: 5948999 over 16.00s (371737 per second)
+ItoM: 5946937 over 16.00s (371609 per second)
 Success formatting namespace:1
 → PCIeRdCur-hits with single-read
 Number of physical cores: 16
@@ -1173,18 +1166,18 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-40043 blocks/s (156 MiB/s) via 40043 commands (3 MiB/s), PCIeRdCur: 5206135
-37340 blocks/s (145 MiB/s) via 37340 commands (2 MiB/s), PCIeRdCur: 4853965
-40025 blocks/s (156 MiB/s) via 40025 commands (3 MiB/s), PCIeRdCur: 5203006
-39102 blocks/s (152 MiB/s) via 39102 commands (2 MiB/s), PCIeRdCur: 5083628
-38104 blocks/s (148 MiB/s) via 38104 commands (2 MiB/s), PCIeRdCur: 4953536
-39276 blocks/s (153 MiB/s) via 39276 commands (2 MiB/s), PCIeRdCur: 5106233
-16110 blocks/s (62 MiB/s) via 16110 commands (1 MiB/s), PCIeRdCur: 2094319
+36200 blocks/s (141 MiB/s) via 36200 commands (2 MiB/s), PCIeRdCur: 4706607
+35952 blocks/s (140 MiB/s) via 35952 commands (2 MiB/s), PCIeRdCur: 4673171
+38695 blocks/s (151 MiB/s) via 38695 commands (2 MiB/s), PCIeRdCur: 5030372
+35500 blocks/s (138 MiB/s) via 35500 commands (2 MiB/s), PCIeRdCur: 4615003
+36931 blocks/s (144 MiB/s) via 36931 commands (2 MiB/s), PCIeRdCur: 4801036
+36312 blocks/s (141 MiB/s) via 36312 commands (2 MiB/s), PCIeRdCur: 4721175
+30410 blocks/s (118 MiB/s) via 30410 commands (2 MiB/s), PCIeRdCur: 3953027
 
 Command limit of 250000 reached, exiting…
 
 
-PCIeRdCur: 32500822 over 7.00s (4641989 per second)
+PCIeRdCur: 32500391 over 7.00s (4641916 per second)
 → PCIeRdCur-misses with single-read
 Number of physical cores: 16
 Number of logical cores: 16
@@ -1213,18 +1206,19 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/single.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Sequentially access a single block.
 
-39146 blocks/s (152 MiB/s) via 39146 commands (2 MiB/s), PCIeRdCur: 30
-39434 blocks/s (154 MiB/s) via 39434 commands (3 MiB/s), PCIeRdCur: 142
-38386 blocks/s (149 MiB/s) via 38386 commands (2 MiB/s), PCIeRdCur: 19
-39935 blocks/s (155 MiB/s) via 39935 commands (3 MiB/s), PCIeRdCur: 320
-39786 blocks/s (155 MiB/s) via 39786 commands (3 MiB/s), PCIeRdCur: 9
-41563 blocks/s (162 MiB/s) via 41563 commands (3 MiB/s), PCIeRdCur: 2
-11750 blocks/s (45 MiB/s) via 11750 commands (0 MiB/s), PCIeRdCur: 138
+34960 blocks/s (136 MiB/s) via 34960 commands (2 MiB/s), PCIeRdCur: 4
+36580 blocks/s (142 MiB/s) via 36580 commands (2 MiB/s), PCIeRdCur: 19
+35158 blocks/s (137 MiB/s) via 35158 commands (2 MiB/s), PCIeRdCur: 1
+35134 blocks/s (137 MiB/s) via 35134 commands (2 MiB/s), PCIeRdCur: 6
+34344 blocks/s (134 MiB/s) via 34344 commands (2 MiB/s), PCIeRdCur: 203
+35726 blocks/s (139 MiB/s) via 35726 commands (2 MiB/s), PCIeRdCur: 125
+35389 blocks/s (138 MiB/s) via 35389 commands (2 MiB/s), PCIeRdCur: 4
+2709 blocks/s (10 MiB/s) via 2709 commands (0 MiB/s), PCIeRdCur: 4
 
 Command limit of 250000 reached, exiting…
 
 
-PCIeRdCur: 660 over 7.00s (94 per second)
+PCIeRdCur: 366 over 8.00s (46 per second)
 Success formatting namespace:1
 → PCIeRdCur-hits with random-read
 Number of physical cores: 16
@@ -1254,37 +1248,36 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-43090 blocks/s (168 MiB/s) via 1390 commands (0 MiB/s), PCIeRdCur: 2855116
-61752 blocks/s (241 MiB/s) via 1992 commands (0 MiB/s), PCIeRdCur: 4091917
-61938 blocks/s (241 MiB/s) via 1998 commands (0 MiB/s), PCIeRdCur: 4103905
-61969 blocks/s (242 MiB/s) via 1999 commands (0 MiB/s), PCIeRdCur: 4105956
-62589 blocks/s (244 MiB/s) via 2019 commands (0 MiB/s), PCIeRdCur: 4147040
-64976 blocks/s (253 MiB/s) via 2096 commands (0 MiB/s), PCIeRdCur: 4305193
-62651 blocks/s (244 MiB/s) via 2021 commands (0 MiB/s), PCIeRdCur: 4153479
-63240 blocks/s (247 MiB/s) via 2040 commands (0 MiB/s), PCIeRdCur: 4190044
-62992 blocks/s (246 MiB/s) via 2032 commands (0 MiB/s), PCIeRdCur: 4171888
-62589 blocks/s (244 MiB/s) via 2019 commands (0 MiB/s), PCIeRdCur: 4147038
-61721 blocks/s (241 MiB/s) via 1991 commands (0 MiB/s), PCIeRdCur: 4089532
+46097 blocks/s (180 MiB/s) via 1487 commands (0 MiB/s), PCIeRdCur: 3054297
+64387 blocks/s (251 MiB/s) via 2077 commands (0 MiB/s), PCIeRdCur: 4266294
+64325 blocks/s (251 MiB/s) via 2075 commands (0 MiB/s), PCIeRdCur: 4262524
+63209 blocks/s (246 MiB/s) via 2039 commands (0 MiB/s), PCIeRdCur: 4188106
+64232 blocks/s (250 MiB/s) via 2072 commands (0 MiB/s), PCIeRdCur: 4255893
+63891 blocks/s (249 MiB/s) via 2061 commands (0 MiB/s), PCIeRdCur: 4233293
+63674 blocks/s (248 MiB/s) via 2054 commands (0 MiB/s), PCIeRdCur: 4218990
+63798 blocks/s (249 MiB/s) via 2058 commands (0 MiB/s), PCIeRdCur: 4229186
+64108 blocks/s (250 MiB/s) via 2068 commands (0 MiB/s), PCIeRdCur: 4247943
+64728 blocks/s (252 MiB/s) via 2088 commands (0 MiB/s), PCIeRdCur: 4286707
+63581 blocks/s (248 MiB/s) via 2051 commands (0 MiB/s), PCIeRdCur: 4212759
+64325 blocks/s (251 MiB/s) via 2075 commands (0 MiB/s), PCIeRdCur: 4262122
+63736 blocks/s (248 MiB/s) via 2056 commands (0 MiB/s), PCIeRdCur: 4223029
+63209 blocks/s (246 MiB/s) via 2039 commands (0 MiB/s), PCIeRdCur: 4188106
 64263 blocks/s (251 MiB/s) via 2073 commands (0 MiB/s), PCIeRdCur: 4258163
-62806 blocks/s (245 MiB/s) via 2026 commands (0 MiB/s), PCIeRdCur: 4161419
-62403 blocks/s (243 MiB/s) via 2013 commands (0 MiB/s), PCIeRdCur: 4136323
-61628 blocks/s (240 MiB/s) via 1988 commands (0 MiB/s), PCIeRdCur: 4081827
-63147 blocks/s (246 MiB/s) via 2037 commands (0 MiB/s), PCIeRdCur: 4184007
-62620 blocks/s (244 MiB/s) via 2020 commands (0 MiB/s), PCIeRdCur: 4149368
-61504 blocks/s (240 MiB/s) via 1984 commands (0 MiB/s), PCIeRdCur: 4077174
-62651 blocks/s (244 MiB/s) via 2021 commands (0 MiB/s), PCIeRdCur: 4149569
-62496 blocks/s (244 MiB/s) via 2016 commands (0 MiB/s), PCIeRdCur: 4140836
-62155 blocks/s (242 MiB/s) via 2005 commands (0 MiB/s), PCIeRdCur: 4118286
-61876 blocks/s (241 MiB/s) via 1996 commands (0 MiB/s), PCIeRdCur: 4100007
-62589 blocks/s (244 MiB/s) via 2019 commands (0 MiB/s), PCIeRdCur: 4147041
-62527 blocks/s (244 MiB/s) via 2017 commands (0 MiB/s), PCIeRdCur: 4142928
-61349 blocks/s (239 MiB/s) via 1979 commands (0 MiB/s), PCIeRdCur: 4064889
-6479 blocks/s (25 MiB/s) via 209 commands (0 MiB/s), PCIeRdCur: 429287
+62651 blocks/s (244 MiB/s) via 2021 commands (0 MiB/s), PCIeRdCur: 4153193
+62806 blocks/s (245 MiB/s) via 2026 commands (0 MiB/s), PCIeRdCur: 4159359
+61814 blocks/s (241 MiB/s) via 1994 commands (0 MiB/s), PCIeRdCur: 4095679
+62651 blocks/s (244 MiB/s) via 2021 commands (0 MiB/s), PCIeRdCur: 4151143
+62744 blocks/s (245 MiB/s) via 2024 commands (0 MiB/s), PCIeRdCur: 4157298
+62589 blocks/s (244 MiB/s) via 2019 commands (0 MiB/s), PCIeRdCur: 4147306
+64852 blocks/s (253 MiB/s) via 2092 commands (0 MiB/s), PCIeRdCur: 4296968
+65131 blocks/s (254 MiB/s) via 2101 commands (0 MiB/s), PCIeRdCur: 4315460
+64356 blocks/s (251 MiB/s) via 2076 commands (0 MiB/s), PCIeRdCur: 4265761
+38843 blocks/s (151 MiB/s) via 1253 commands (0 MiB/s), PCIeRdCur: 2572012
 
 Command limit of 50000 reached, exiting…
 
 
-PCIeRdCur: 102702232 over 26.01s (3949299 per second)
+PCIeRdCur: 102701591 over 25.01s (4107183 per second)
 → PCIeRdCur-misses with random-read
 Number of physical cores: 16
 Number of logical cores: 16
@@ -1313,33 +1306,33 @@ Loading pattern /home/werling/tools/nvme-memload/patterns/random.so
 Memory buffer size: 262144 blocks (1024 MiB)
 Pattern loaded: Accesses random disk blocks in large chunks.
 
-41788 blocks/s (163 MiB/s) via 1348 commands (0 MiB/s), PCIeRdCur: 54499
-61876 blocks/s (241 MiB/s) via 1996 commands (0 MiB/s), PCIeRdCur: 120084
-62465 blocks/s (244 MiB/s) via 2015 commands (0 MiB/s), PCIeRdCur: 123185
-62279 blocks/s (243 MiB/s) via 2009 commands (0 MiB/s), PCIeRdCur: 122452
-62682 blocks/s (244 MiB/s) via 2022 commands (0 MiB/s), PCIeRdCur: 122841
-64945 blocks/s (253 MiB/s) via 2095 commands (0 MiB/s), PCIeRdCur: 127776
-61876 blocks/s (241 MiB/s) via 1996 commands (0 MiB/s), PCIeRdCur: 121486
-62744 blocks/s (245 MiB/s) via 2024 commands (0 MiB/s), PCIeRdCur: 123417
-62465 blocks/s (244 MiB/s) via 2015 commands (0 MiB/s), PCIeRdCur: 123328
-62124 blocks/s (242 MiB/s) via 2004 commands (0 MiB/s), PCIeRdCur: 121692
-61938 blocks/s (241 MiB/s) via 1998 commands (0 MiB/s), PCIeRdCur: 122692
-63240 blocks/s (247 MiB/s) via 2040 commands (0 MiB/s), PCIeRdCur: 124064
-64573 blocks/s (252 MiB/s) via 2083 commands (0 MiB/s), PCIeRdCur: 126585
-64108 blocks/s (250 MiB/s) via 2068 commands (0 MiB/s), PCIeRdCur: 125907
-64511 blocks/s (251 MiB/s) via 2081 commands (0 MiB/s), PCIeRdCur: 126865
-64697 blocks/s (252 MiB/s) via 2087 commands (0 MiB/s), PCIeRdCur: 126446
-63860 blocks/s (249 MiB/s) via 2060 commands (0 MiB/s), PCIeRdCur: 125006
-64480 blocks/s (251 MiB/s) via 2080 commands (0 MiB/s), PCIeRdCur: 126135
-64356 blocks/s (251 MiB/s) via 2076 commands (0 MiB/s), PCIeRdCur: 126032
-63984 blocks/s (249 MiB/s) via 2064 commands (0 MiB/s), PCIeRdCur: 125370
-62930 blocks/s (245 MiB/s) via 2030 commands (0 MiB/s), PCIeRdCur: 122014
-64108 blocks/s (250 MiB/s) via 2068 commands (0 MiB/s), PCIeRdCur: 124943
-64821 blocks/s (253 MiB/s) via 2091 commands (0 MiB/s), PCIeRdCur: 126333
-63364 blocks/s (247 MiB/s) via 2044 commands (0 MiB/s), PCIeRdCur: 122505
-49786 blocks/s (194 MiB/s) via 1606 commands (0 MiB/s), PCIeRdCur: 96737
+46221 blocks/s (180 MiB/s) via 1491 commands (0 MiB/s), PCIeRdCur: 62059
+63271 blocks/s (247 MiB/s) via 2041 commands (0 MiB/s), PCIeRdCur: 121997
+63147 blocks/s (246 MiB/s) via 2037 commands (0 MiB/s), PCIeRdCur: 122815
+64015 blocks/s (250 MiB/s) via 2065 commands (0 MiB/s), PCIeRdCur: 124316
+64573 blocks/s (252 MiB/s) via 2083 commands (0 MiB/s), PCIeRdCur: 125579
+64604 blocks/s (252 MiB/s) via 2084 commands (0 MiB/s), PCIeRdCur: 125084
+63922 blocks/s (249 MiB/s) via 2062 commands (0 MiB/s), PCIeRdCur: 123689
+64046 blocks/s (250 MiB/s) via 2066 commands (0 MiB/s), PCIeRdCur: 124167
+64108 blocks/s (250 MiB/s) via 2068 commands (0 MiB/s), PCIeRdCur: 124386
+63922 blocks/s (249 MiB/s) via 2062 commands (0 MiB/s), PCIeRdCur: 123797
+64666 blocks/s (252 MiB/s) via 2086 commands (0 MiB/s), PCIeRdCur: 124579
+65069 blocks/s (254 MiB/s) via 2099 commands (0 MiB/s), PCIeRdCur: 126249
+63705 blocks/s (248 MiB/s) via 2055 commands (0 MiB/s), PCIeRdCur: 123442
+64573 blocks/s (252 MiB/s) via 2083 commands (0 MiB/s), PCIeRdCur: 124609
+64635 blocks/s (252 MiB/s) via 2085 commands (0 MiB/s), PCIeRdCur: 124619
+64604 blocks/s (252 MiB/s) via 2084 commands (0 MiB/s), PCIeRdCur: 125041
+63426 blocks/s (247 MiB/s) via 2046 commands (0 MiB/s), PCIeRdCur: 123242
+64294 blocks/s (251 MiB/s) via 2074 commands (0 MiB/s), PCIeRdCur: 125202
+64294 blocks/s (251 MiB/s) via 2074 commands (0 MiB/s), PCIeRdCur: 125877
+63922 blocks/s (249 MiB/s) via 2062 commands (0 MiB/s), PCIeRdCur: 124639
+64883 blocks/s (253 MiB/s) via 2093 commands (0 MiB/s), PCIeRdCur: 127044
+64418 blocks/s (251 MiB/s) via 2078 commands (0 MiB/s), PCIeRdCur: 126911
+64480 blocks/s (251 MiB/s) via 2080 commands (0 MiB/s), PCIeRdCur: 126730
+62341 blocks/s (243 MiB/s) via 2011 commands (0 MiB/s), PCIeRdCur: 122296
+28861 blocks/s (112 MiB/s) via 931 commands (0 MiB/s), PCIeRdCur: 57082
 
 Command limit of 50000 reached, exiting…
 
 
-PCIeRdCur: 3008455 over 25.01s (120313 per second)
+PCIeRdCur: 2985451 over 25.01s (119393 per second)

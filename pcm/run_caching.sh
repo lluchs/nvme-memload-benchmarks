@@ -35,7 +35,7 @@ run() {
 }
 
 run "" ""
+run "" -conce
 run -b262144 ""
-run -b262144 -conce
 run -b262144 -calways
 
