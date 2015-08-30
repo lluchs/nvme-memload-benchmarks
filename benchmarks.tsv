@@ -41,3 +41,9 @@ perfkit	2	i30pc80	02	./perfkit/runs/i30pc80/benchmark2-02.csv	1 GiB buffer, -c a
 perfkit	3	i30pc80	00	./perfkit/runs/i30pc80/benchmark3-00.csv	1 channel, plain
 perfkit	3	i30pc80	01	./perfkit/runs/i30pc80/benchmark3-01.csv	1 channel, 1 GiB buffer
 perfkit	3	i30pc80	02	./perfkit/runs/i30pc80/benchmark3-02.csv	1 channel, 1 GiB buffer, -c always
+perfkit-collected	1	i30pc74	memtier-redis	./perfkit/runs/collected/i30pc74-memtier-redis.csv
+perfkit-collected	1	i30pc74	silo-tpcc	./perfkit/runs/collected/i30pc74-silo-tpcc.csv
+perfkit-collected	1	i30pc74	silo-ycsb	./perfkit/runs/collected/i30pc74-silo-ycsb.csv
+perfkit-collected	1	i30pc80	memtier-redis	./perfkit/runs/collected/i30pc80-memtier-redis.csv
+perfkit-collected	1	i30pc80	silo-tpcc	./perfkit/runs/collected/i30pc80-silo-tpcc.csv
+perfkit-collected	1	i30pc80	silo-ycsb	./perfkit/runs/collected/i30pc80-silo-ycsb.csv
