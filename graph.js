@@ -60,6 +60,7 @@
 
   var legend = d3.select('#legend')
       .attr('width', 100)
+      .attr('transform', `translate(${width - 20}, 0)`)
   legend.append('g')
       .attr('transform', 'translate(10, 10)')
 
