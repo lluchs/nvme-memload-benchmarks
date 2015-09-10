@@ -10,6 +10,9 @@ blocks) # blocks in MiB
 bandwidth) # blocks + commands in MiB
 	data='rshift($4 * '$BLOCKSIZE' + $5 * (64 + 16), 20) / $1'
 	;;
+command-rate) # 1000 commands per second
+	data='$5 / $1 / 1000'
+	;;
 *)
 	echo "Usage: $0 <what to graph>"
 	exit 1
