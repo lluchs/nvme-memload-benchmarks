@@ -12,7 +12,7 @@ awk -F "\t" '
 	if (counter == "PCIeRdCur") {
 		expected = ((rw == "read" ? blocks * 4096 : 0) + commands * 64) / 64;
 	} else if (counter == "ItoM") {
-		expected = ((rw == "write" ? blocks * 4096 : 0) + commands * 16) / 64;
+		expected = (rw == "write" ? blocks * 4096 : 0) / 64;
 	} else {
 		expected = 0;
 	}
