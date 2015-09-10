@@ -8,6 +8,7 @@ set -eu
 
 BENCHMARK=${1:?Benchmark name needed as first parameter}
 BASEPATH=${2:?Base path needed as second parameter}
+BASEPATH2=${3:?Base path for single channel needed as third parameter}
 
 # Print header
 head -n1 $BASEPATH-00.csv
@@ -19,3 +20,4 @@ process() {
 process $BASEPATH-00.csv "default"
 process $BASEPATH-01.csv "big buffer"
 process $BASEPATH-02.csv "caching"
+process $BASEPATH2-00.csv "single channel"

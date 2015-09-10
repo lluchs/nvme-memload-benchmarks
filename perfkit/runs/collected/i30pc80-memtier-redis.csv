@@ -44,3 +44,18 @@ real,user,sys,benchmark,threads,loadconfig,runtime,throughput
 230.06,127.78,339.99,caching,7,plain,227,154915.01
 345.09,145.52,449.22,caching,7,random,341,102754.48
 343.09,131.57,433.56,caching,7,single,342,102224.31
+226.06,130.56,330.54,single channel,7,plain,222,157118.49
+210.06,128.68,297.19,single channel,7,random,205,171005.12
+218.06,121.39,314.75,single channel,7,single,213,164327.29
+215.06,120.80,306.71,single channel,7,plain,211,165014.59
+211.06,115.70,302.30,single channel,7,random,207,169627.33
+327.08,129.90,406.98,single channel,7,single,324,108064.12
+218.06,118.02,305.38,single channel,7,plain,214,163683.54
+212.06,136.46,325.42,single channel,7,random,207,168218.26
+315.08,123.92,392.59,single channel,7,single,314,111386.06
+219.06,120.71,310.03,single channel,7,plain,213,164194.63
+211.06,121.54,306.34,single channel,7,random,208,167663.08
+323.08,130.17,408.76,single channel,7,single,321,108745.57
+223.06,127.53,322.77,single channel,7,plain,219,160742.43
+339.08,127.57,422.98,single channel,7,random,337,103589.89
+311.07,125.44,390.06,single channel,7,single,309,112984.32

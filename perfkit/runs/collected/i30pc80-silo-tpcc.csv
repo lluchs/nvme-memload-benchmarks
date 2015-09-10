@@ -43,3 +43,18 @@ real,user,sys,benchmark,threads,loadconfig,runtime,throughput
 233.55,1555.90,2.82,caching,7,plain,228.638,122464
 237.74,1565.96,2.51,caching,7,random,232.849,120250
 237.63,1579.58,2.87,caching,7,single,232.69,120332
+251.04,1603.47,9.71,single channel,7,plain
+239.14,1561.17,5.02,single channel,7,random,232.468,120447
+220.96,1507.50,2.36,single channel,7,single,217.058,128998
+236.52,1563.67,4.67,single channel,7,plain,229.321,122100
+237.04,1538.21,4.37,single channel,7,random,231.245,121084
+221.50,1504.54,2.44,single channel,7,single,217.28,128866
+236.96,1556.19,3.99,single channel,7,plain,230.148,121661
+236.51,1535.25,3.78,single channel,7,random,230.218,121624
+227.87,1558.35,2.31,single channel,7,single,223.945,125031
+240.34,1586.23,5.08,single channel,7,plain,231.724,120833
+235.82,1566.65,3.98,single channel,7,random,228.965,122289
+221.78,1507.78,2.50,single channel,7,single,217.088,128980
+239.51,1567.33,4.72,single channel,7,plain,230.97,121228
+233.66,1557.25,3.87,single channel,7,random,228.113,122746
+220.55,1505.58,2.51,single channel,7,single,215.926,129674
