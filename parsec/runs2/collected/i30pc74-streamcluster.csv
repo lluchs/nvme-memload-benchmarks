@@ -1,0 +1,121 @@
+real,user,sys,benchmark,threads,loadconfig
+134.82,400.17,0.15,default,3,plain
+141.75,420.99,0.10,default,3,random
+142.15,422.12,0.12,default,3,single
+134.75,400.02,0.17,default,3,plain
+141.72,420.77,0.12,default,3,random
+142.38,422.66,0.12,default,3,single
+134.79,400.02,0.19,default,3,plain
+141.77,420.96,0.16,default,3,random
+142.24,422.27,0.14,default,3,single
+134.81,400.09,0.14,default,3,plain
+141.83,421.08,0.10,default,3,random
+142.17,422.07,0.16,default,3,single
+134.87,400.19,0.12,default,3,plain
+141.75,420.70,0.12,default,3,random
+142.29,422.39,0.13,default,3,single
+134.96,400.41,0.15,default,3,plain
+141.66,420.61,0.12,default,3,random
+142.15,422.01,0.16,default,3,single
+134.79,400.08,0.14,default,3,plain
+141.85,421.08,0.09,default,3,random
+142.15,422.08,0.16,default,3,single
+135.01,400.41,0.20,default,3,plain
+141.73,420.72,0.15,default,3,random
+142.34,422.50,0.09,default,3,single
+134.81,400.10,0.16,default,3,plain
+141.79,420.97,0.10,default,3,random
+142.30,422.49,0.08,default,3,single
+134.80,400.03,0.15,default,3,plain
+141.79,420.90,0.12,default,3,random
+142.29,422.30,0.15,default,3,single
+134.83,400.10,0.19,caching,3,plain
+144.77,429.87,0.12,caching,3,random
+144.20,428.14,0.14,caching,3,single
+134.85,400.11,0.18,caching,3,plain
+144.84,430.05,0.17,caching,3,random
+144.21,428.18,0.10,caching,3,single
+135.05,400.62,0.14,caching,3,plain
+144.81,429.99,0.16,caching,3,random
+144.19,428.29,0.13,caching,3,single
+134.86,400.26,0.10,caching,3,plain
+144.84,430.05,0.11,caching,3,random
+144.25,428.34,0.11,caching,3,single
+134.90,400.44,0.18,caching,3,plain
+144.83,430.12,0.10,caching,3,random
+144.11,427.73,0.16,caching,3,single
+134.90,400.15,0.15,caching,3,plain
+144.93,430.30,0.09,caching,3,random
+144.07,427.64,0.15,caching,3,single
+134.91,400.44,0.15,caching,3,plain
+144.90,430.42,0.12,caching,3,random
+143.97,427.62,0.12,caching,3,single
+134.82,400.02,0.20,caching,3,plain
+145.06,430.44,0.15,caching,3,random
+144.24,428.30,0.16,caching,3,single
+134.83,400.15,0.16,caching,3,plain
+144.78,430.04,0.12,caching,3,random
+144.11,427.86,0.09,caching,3,single
+134.92,400.29,0.17,caching,3,plain
+145.10,430.74,0.13,caching,3,random
+144.05,427.84,0.14,caching,3,single
+134.81,400.12,0.16,big buffer,3,plain
+141.80,421.12,0.10,big buffer,3,random
+142.24,422.37,0.06,big buffer,3,single
+134.88,400.21,0.19,big buffer,3,plain
+141.78,421.07,0.20,big buffer,3,random
+142.21,422.40,0.12,big buffer,3,single
+134.74,400.00,0.16,big buffer,3,plain
+141.83,421.15,0.12,big buffer,3,random
+142.23,422.44,0.10,big buffer,3,single
+134.90,400.44,0.12,big buffer,3,plain
+141.89,421.24,0.16,big buffer,3,random
+142.29,422.44,0.12,big buffer,3,single
+134.79,400.11,0.16,big buffer,3,plain
+141.82,421.19,0.14,big buffer,3,random
+142.16,422.14,0.16,big buffer,3,single
+134.97,400.38,0.19,big buffer,3,plain
+141.87,421.32,0.11,big buffer,3,random
+142.02,421.90,0.11,big buffer,3,single
+134.78,400.13,0.13,big buffer,3,plain
+141.92,421.30,0.16,big buffer,3,random
+142.20,422.22,0.10,big buffer,3,single
+134.89,400.26,0.17,big buffer,3,plain
+141.93,421.30,0.13,big buffer,3,random
+142.26,422.42,0.11,big buffer,3,single
+134.79,400.05,0.17,big buffer,3,plain
+141.84,421.12,0.18,big buffer,3,random
+142.12,422.10,0.16,big buffer,3,single
+134.75,400.03,0.13,big buffer,3,plain
+141.90,421.35,0.10,big buffer,3,random
+142.10,422.08,0.08,big buffer,3,single
+155.87,462.89,0.15,single channel,3,plain
+194.29,579.00,0.10,single channel,3,random
+193.90,576.84,0.16,single channel,3,single
+155.95,463.03,0.20,single channel,3,plain
+191.77,570.75,0.11,single channel,3,random
+194.05,577.35,0.16,single channel,3,single
+155.97,463.01,0.20,single channel,3,plain
+191.65,570.32,0.16,single channel,3,random
+193.69,576.28,0.14,single channel,3,single
+155.99,462.92,0.27,single channel,3,plain
+191.79,570.61,0.15,single channel,3,random
+193.93,577.14,0.13,single channel,3,single
+155.87,462.90,0.18,single channel,3,plain
+191.88,570.99,0.13,single channel,3,random
+193.57,576.05,0.14,single channel,3,single
+155.87,462.84,0.18,single channel,3,plain
+191.84,570.90,0.16,single channel,3,random
+193.94,577.02,0.08,single channel,3,single
+155.82,462.91,0.16,single channel,3,plain
+191.91,570.69,0.14,single channel,3,random
+193.73,576.59,0.10,single channel,3,single
+157.45,468.34,0.19,single channel,3,plain
+191.85,570.83,0.09,single channel,3,random
+193.68,576.52,0.09,single channel,3,single
+158.08,470.16,0.23,single channel,3,plain
+191.91,570.82,0.16,single channel,3,random
+193.78,576.65,0.12,single channel,3,single
+155.93,462.97,0.18,single channel,3,plain
+191.77,570.78,0.13,single channel,3,random
+193.55,576.02,0.15,single channel,3,single
