@@ -1,7 +1,7 @@
 real,user,sys,benchmark,threads,loadconfig,runtime,throughput
+325.84,936.08,1.07,default,3,plain,321.263,93381.5
 326.07,946.66,1.06,default,3,random,320.729,93537
 321.28,943.19,1.07,default,3,single,316.788,94700.6
-325.84,936.08,1.07,default,3,plain,321.263,93381.5
 321.84,939.02,1.01,default,3,random,317.525,94480.7
 422.68,1236.57,1.05,default,3,single,418.085,71755.7
 326.19,930.01,1.00,default,3,plain,321.705,93253.2
