@@ -17,6 +17,6 @@ process() {
 }
 
 process $BASEPATH/benchmark1.csv "default"
-process $BASEPATH/benchmark3.csv "caching"
 process $BASEPATH/benchmark4.csv "big buffer"
+process $BASEPATH/benchmark6.csv "caching"
 process $BASEPATH/benchmark5.csv "single channel"

@@ -29,36 +29,6 @@ real,user,sys,benchmark,threads,loadconfig
 71.33,205.54,0.56,default,7,plain
 74.17,211.74,0.66,default,7,random
 73.71,210.09,0.74,default,7,single
-71.55,205.83,0.66,caching,7,plain
-73.77,211.21,0.72,caching,7,random
-74.39,211.60,0.63,caching,7,single
-71.68,205.87,0.79,caching,7,plain
-74.28,211.64,0.67,caching,7,random
-74.27,211.43,0.75,caching,7,single
-71.54,205.64,0.73,caching,7,plain
-73.97,210.84,0.72,caching,7,random
-74.01,211.27,0.68,caching,7,single
-71.44,205.39,0.66,caching,7,plain
-73.71,210.95,0.74,caching,7,random
-73.89,211.05,0.75,caching,7,single
-73.76,213.24,0.58,caching,7,plain
-74.23,211.22,0.82,caching,7,random
-74.35,211.88,0.78,caching,7,single
-71.65,205.68,0.67,caching,7,plain
-74.39,211.69,0.66,caching,7,random
-74.08,211.32,0.76,caching,7,single
-71.56,205.85,0.70,caching,7,plain
-73.96,211.26,0.69,caching,7,random
-74.18,211.71,0.70,caching,7,single
-71.43,205.62,0.76,caching,7,plain
-73.74,210.99,0.69,caching,7,random
-74.05,211.54,0.74,caching,7,single
-71.56,205.77,0.80,caching,7,plain
-73.87,211.04,0.63,caching,7,random
-74.24,211.85,0.69,caching,7,single
-71.64,206.23,0.66,caching,7,plain
-74.07,211.38,0.72,caching,7,random
-74.27,212.02,0.63,caching,7,single
 73.25,207.38,0.66,big buffer,7,plain
 76.78,222.29,0.71,big buffer,7,random
 75.05,217.53,0.64,big buffer,7,single
@@ -89,6 +59,36 @@ real,user,sys,benchmark,threads,loadconfig
 71.42,205.46,0.68,big buffer,7,plain
 76.66,222.07,0.69,big buffer,7,random
 75.70,217.99,0.78,big buffer,7,single
+71.09,205.43,0.66,caching,7,plain
+81.45,227.56,0.72,caching,7,random
+78.51,221.40,0.67,caching,7,single
+72.23,206.61,0.63,caching,7,plain
+81.00,226.78,0.65,caching,7,random
+78.76,222.14,0.66,caching,7,single
+71.56,205.78,0.56,caching,7,plain
+81.92,227.46,0.74,caching,7,random
+78.74,221.89,0.66,caching,7,single
+71.03,205.33,0.66,caching,7,plain
+82.07,228.52,0.70,caching,7,random
+78.69,221.78,0.65,caching,7,single
+72.31,206.38,0.80,caching,7,plain
+81.30,226.68,0.70,caching,7,random
+79.32,222.50,0.64,caching,7,single
+71.52,205.51,0.74,caching,7,plain
+81.12,226.54,0.69,caching,7,random
+78.76,221.71,0.75,caching,7,single
+71.35,205.46,0.53,caching,7,plain
+82.33,228.28,0.80,caching,7,random
+79.35,222.95,0.67,caching,7,single
+71.44,205.65,0.68,caching,7,plain
+82.04,228.22,0.75,caching,7,random
+79.03,222.25,0.70,caching,7,single
+74.09,214.35,0.60,caching,7,plain
+82.21,228.32,0.81,caching,7,random
+79.31,222.79,0.73,caching,7,single
+71.97,206.17,0.60,caching,7,plain
+82.29,228.62,0.69,caching,7,random
+79.17,222.50,0.69,caching,7,single
 74.82,228.37,0.69,single channel,7,plain
 80.30,248.93,0.84,single channel,7,random
 81.41,252.12,0.80,single channel,7,single
