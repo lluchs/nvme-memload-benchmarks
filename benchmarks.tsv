@@ -24,6 +24,7 @@ parsec	2	i30pc80	2	./parsec/runs2/i30pc80/benchmark2.csv	-j8 -c once, taskset: 1
 parsec	2	i30pc80	3	./parsec/runs2/i30pc80/benchmark3.csv	-j8 -c always, taskset: 1/7
 parsec	2	i30pc80	4	./parsec/runs2/i30pc80/benchmark4.csv	-j8, -b 262144 (= 1 GiB), taskset: 1/7
 parsec	2	i30pc80	5	./parsec/runs2/i30pc80/benchmark5.csv	-j8, 1 channel, taskset: 1/7
+parsec	2	i30pc80	6	./parsec/runs2/i30pc80/benchmark6.csv	-j8 -c always, -b 262144 (= 1 GiB), taskset: 1/7
 parsec-collected	1	i30pc74	canneal	./parsec/runs2/collected/i30pc74-canneal.csv
 parsec-collected	1	i30pc74	raytrace	./parsec/runs2/collected/i30pc74-raytrace.csv
 parsec-collected	1	i30pc74	streamcluster	./parsec/runs2/collected/i30pc74-streamcluster.csv
