@@ -3,7 +3,7 @@
 echo counter pattern bufsize caching hits misses
 
 awk -F "\t" '
-/-hits/ { hits = $6; }
+/-hits/ { hits = $8; }
 # Assume both runs have the same configuration.
 /-misses/ {
 	split($1, a, "-"); counter = a[1];
